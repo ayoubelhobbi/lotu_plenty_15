@@ -16,11 +16,16 @@ class LotuThemeServiceProvider extends ServiceProvider
 
     public function register()
     {
-        
+
     }
 
     public function boot(Dispatcher $dispatcher)
     {
+
+      $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
+			 {
+					$partial->set('footer', 'Lotu::ThemeFooter');
+			 }, 0);
        	// Override template
         $dispatcher->listen('IO.tpl.home', function (TemplateContainer $container) {
             $container->setTemplate('LotuTheme::Homepage.Homepage');
