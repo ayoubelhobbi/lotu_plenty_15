@@ -1027,7 +1027,7 @@ a.nav-link.active:hover, a.nav-link:hover {
 
 @media (min-width: 768px) {
 .wrapper-main>nav.container-max {
-    top: 130px;
+    top: 3px;
 }
 }
 
