@@ -183,6 +183,10 @@ body > #vue-app, body > #vue-error {
   position: relative;
 }
 
+.wrapper-main #page-header.top-bar {
+  background-color: transparent;
+}
+
 .price span {
     font-family: 'akaChen', sans-serif !important;
     font-size: 2.5rem;
