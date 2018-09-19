@@ -28,7 +28,7 @@ class LotuThemeServiceProvider extends ServiceProvider
 
       $dispatcher->listen('IO.init.templates', function(Partial $partial)
 			 {
-					$partial->set('footer', 'Lotu::ThemeFooter');
+					$partial->set('footer', 'LotuTheme::ThemeFooter');
 			 }, 0);
        	// Override template
         $dispatcher->listen('IO.tpl.home', function (TemplateContainer $container) {
