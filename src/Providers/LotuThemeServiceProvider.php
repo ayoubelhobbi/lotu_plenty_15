@@ -33,7 +33,6 @@ class LotuThemeServiceProvider extends ServiceProvider
        	// Override template
         $dispatcher->listen('IO.tpl.home', function (TemplateContainer $container) {
             $container->setTemplate('LotuTheme::Homepage.Homepage');
-            return false;
         }, self::PRIORITY);
     }
 }
