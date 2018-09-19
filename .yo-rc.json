@@ -1,0 +1,16 @@
+{
+  "@plentymarkets/generator-plugin": {
+    "answers": {
+      "name": "LotuTheme",
+      "author": "Ayoub El Hobbi",
+      "license": "MIT",
+      "shortDescription": "Ein Theme für Plentymarkets Version 15 ",
+      "price": "0",
+      "version": "0.0.1",
+      "categories": [
+        "3518"
+      ],
+      "type": "theme"
+    }
+  }
+}
