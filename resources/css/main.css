@@ -187,6 +187,10 @@ body > #vue-app, body > #vue-error {
   background-color: transparent;
 }
 
+.wrapper-main #page-header {
+  background-color: transparent;
+}
+
 .price span {
     font-family: 'akaChen', sans-serif !important;
     font-size: 2.5rem;
@@ -951,6 +955,13 @@ button.btn.btn-block.btn-default {
 .square-container {
 
 	padding-bottom: 66%;
+}
+
+@media (min-width: 768px){
+.wrapper-main .breadcrumbs {
+  background: transparent;
+  z-index: 1000;
+}
 }
 
 @media (min-width: 768px) {
