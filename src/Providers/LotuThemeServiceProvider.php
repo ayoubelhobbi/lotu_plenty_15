@@ -7,7 +7,6 @@ use IO\Extensions\Functions\Partial;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
-use IO\Helper\TemplateContainer;
 
 /**
  * Class LotuThemeServiceProvider
@@ -29,9 +28,5 @@ class LotuThemeServiceProvider extends ServiceProvider
 			 {
 					$partial->set('footer', 'LotuTheme::ThemeFooter');
 			 }, 0);
-       	// Override template
-        $dispatcher->listen('IO.tpl.home', function (TemplateContainer $container) {
-            $container->setTemplate('LotuTheme::Homepage.Homepage');
-        }, self::PRIORITY);
     }
 }
