@@ -720,15 +720,17 @@ button.btn.btn-block.btn-default {
 
 .alleinstellung div {
   background-color: #222222;
+  margin: 3rem;
 }
 
 .alleinstellung img{
   float: left;
   margin-right: 1rem;
+  margin-top: 1rem;
 }
 
 .alleinstellung p {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 
