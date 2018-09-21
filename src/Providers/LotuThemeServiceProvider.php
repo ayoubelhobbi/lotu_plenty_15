@@ -23,7 +23,6 @@ class LotuThemeServiceProvider extends ServiceProvider
 
     public function boot(Dispatcher $dispatcher)
     {
-
       $dispatcher->listen('IO.init.templates', function(Partial $partial)
 			 {
 					$partial->set('footer', 'LotuTheme::ThemeFooter');
