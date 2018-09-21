@@ -26,15 +26,16 @@
                         </span>
                     </h1>
 
-                    <div v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 22">
 
-                      {% if merk.texts.value == "schlauchboot" %}
-                        <img v-bind:src="http://www.androidfreeware.net/software_images/german-television-channels.thumb.png">
-                      {% endif %}
 
-                    <p v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 22">${ merk.texts.value }</p>
+                        <p v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 22 && merk.texts.value == 'schlauchboot'">
 
-                    </div>
+                        ${ merk.texts.value }
+                        <small>Das muss angezeigt werden</smal>
+
+                        </p>
+
+
 
 
 
