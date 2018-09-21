@@ -737,8 +737,10 @@ button.btn.btn-block.btn-default {
   display: inline-block;
 }
 
-.iconsImages img{
-  width: 3rem;
+.iconsImages img {
+  width: 2.1rem;
+  margin-right: 0.1rem;
+  margin-left: 0.4rem;
 }
 
 .PricingContainer {
