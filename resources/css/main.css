@@ -734,7 +734,7 @@ button.btn.btn-block.btn-default {
 }
 
 .iconsSingleItem div {
-  display: inline-block;
+  float: left;
 }
 
 .iconsImages img{
