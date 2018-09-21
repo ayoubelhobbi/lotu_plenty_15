@@ -34,7 +34,7 @@ class LotuThemeServiceProvider extends ServiceProvider
 			 {
 					 if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
 					 {
-							 $container->setNewComponentTemplate('Lotu::Item.SingleItem');
+							 $container->setNewComponentTemplate('LotuTheme::Item.SingleItem');
 					 }
 			 }, self::PRIORITY);
     }
