@@ -11,20 +11,6 @@
                         <div class="col-xs-12">
                             <item-image-carousel image-url-accessor="url" template="#vue-item-image-carousel"></item-image-carousel>
 
-                            <div class="icons">
-                                 <div class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schlauchboot'">
-                                     <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/icon.png">
-                                   </div>
-                                       <br/>
-                                 <div class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Kajak'">
-                                       <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/kayak.png">
-                                   </div>
-                                       <br/>
-                                 <div class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Einzeln'">
-                                       <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/einzeln.png">
-                                   </div>
-                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -132,6 +118,23 @@
                     <slot name="AdditionalContentAfterAddToBasket"></slot>
 
                     <hr>
+
+                    <div class="icons">
+                         <div class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schlauchboot'">
+                             <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/icon.png">
+                           </div>
+                               <br/>
+                         <div class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Kajak'">
+                               <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/kayak.png">
+                           </div>
+                               <br/>
+                         <div class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Einzeln'">
+                               <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/einzeln.png">
+                           </div>
+                     </div>
+
+                     <hr>
+
 
                     <span class="vat small text-muted">
                         * {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
