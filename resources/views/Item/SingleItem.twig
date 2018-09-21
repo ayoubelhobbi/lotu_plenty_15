@@ -153,7 +153,7 @@
                         {% if 'item.description' in itemData or 'all' in itemData %}
                             <div class="tab-pane active" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
 
-                            <p v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 21">${ merk.texts.value }</p>
+                            <p v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 22">${ merk.texts.value }</p>
 
                                 <div class="m-y-2" v-html="currentVariation.texts.description">
                                 </div>
