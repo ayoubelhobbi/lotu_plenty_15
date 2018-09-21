@@ -30,8 +30,11 @@
 
                     <div class="icons">
                         <img src="http://www.androidfreeware.net/software_images/german-television-channels.thumb.png" v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 22 && merk.texts.value == 'Schlauchboot'">
-                        <img src="https://www.windsurfing.hr/img/iconi/sup.png" v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 23 && merk.texts.value == 'Sup'">
-                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/canoe-202-797327.png" v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 24 && merk.texts.value == 'Kajak'">
+                        <img src="https://www.windsurfing.hr/img/iconi/sup.png" v-for="(merk1, index) in currentVariation.properties" v-if="merk1.property.id == 23 && merk1.texts.value == 'Sup'">
+                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/canoe-202-797327.png" v-for="(merk2, index) in currentVariation.properties" v-if="merk2.property.id == 24 && merk2.texts.value == 'Kajak'">
+
+
+                        <p v-for="(merk3, index) in currentVariation.properties" v-if="merk3.property.id == 11 && merk3.texts.value == 'Schlauchboot'">${merk.texts.value}</p>
 
                     </div>
 
