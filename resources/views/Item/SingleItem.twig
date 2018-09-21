@@ -28,11 +28,11 @@
 
 
 
-                    <div v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 22 && merk.texts.value == 'Schlauchboot'">
-                        <p>${ merk.texts.value }</p>
-                        <p>Das muss angezeigt werden</p>
+                    <div class="icons">
+                        <img src="http://www.androidfreeware.net/software_images/german-television-channels.thumb.png" v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 22 && merk.texts.value == 'Schlauchboot'">
+                        <img src="https://www.windsurfing.hr/img/iconi/sup.png" v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 23 && merk.texts.value == 'Sup'">
+                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/canoe-202-797327.png" v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 24 && merk.texts.value == 'Kajak'">
 
-                        <img src="http://www.androidfreeware.net/software_images/german-television-channels.thumb.png">
                     </div>
 
 
