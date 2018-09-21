@@ -35,15 +35,12 @@
 
                     </div>
 
-                    <span class="articlenumber small text-muted">
-                      <b>{{ trans("Ceres::Template.singleItemNumber") }}</b>
-                      <span>${ currentVariation.variation.number }</span>
-                    </span>
+                    
 
-                    <span class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11">
-                      <b>${ property.property.names.name}</b>
-                      <span>${ prop.selection.name}</span>
-                    </span>
+                      <span class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11">
+                        <b>${ property.property.names.name}</b>
+                        <span>${ prop.selection.name}</span>
+                      </span>
 
 
 
