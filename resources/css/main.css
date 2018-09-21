@@ -718,6 +718,10 @@ button.btn.btn-block.btn-default {
   color: #fff;
 }
 
+.alleinstellung div {
+  background-color: #222222;
+}
+
 .alleinstellung img{
   float: left;
   margin-right: 1rem;
