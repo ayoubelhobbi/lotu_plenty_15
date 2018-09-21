@@ -720,7 +720,6 @@ button.btn.btn-block.btn-default {
 
 .alleinstellung div {
   background-color: #222222;
-  margin: 3rem;
 }
 
 .alleinstellung img{
@@ -730,13 +729,14 @@ button.btn.btn-block.btn-default {
 }
 
 .alleinstellung p {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 
 
 
 .PricingContainer {
-      margin: 0 auto;
+    margin: 0 auto;
     padding: 50px 0 0;
     max-width: 1190px;
     width: 100%;

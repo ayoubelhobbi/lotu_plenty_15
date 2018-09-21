@@ -7,6 +7,7 @@ use IO\Extensions\Functions\Partial;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
+use IO\Helper\ComponentContainer;
 
 /**
  * Class LotuThemeServiceProvider
@@ -27,5 +28,13 @@ class LotuThemeServiceProvider extends ServiceProvider
 			 {
 					$partial->set('footer', 'LotuTheme::ThemeFooter');
 			 }, 0);
+
+       $dispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
+			 {
+					 if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
+					 {
+							 $container->setNewComponentTemplate('Lotu::Item.SingleItem');
+					 }
+			 }, self::PRIORITY);
     }
 }
