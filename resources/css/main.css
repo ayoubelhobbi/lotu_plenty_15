@@ -733,7 +733,13 @@ button.btn.btn-block.btn-default {
   font-size: 1.5rem;
 }
 
+.iconsSingleItem div {
+  display: inline-block;
+}
 
+.iconSingleItem img {
+  width: 3rem;
+}
 
 .PricingContainer {
     margin: 0 auto;
