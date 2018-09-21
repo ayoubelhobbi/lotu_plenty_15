@@ -33,12 +33,17 @@
                         <img src="https://www.windsurfing.hr/img/iconi/sup.png" v-for="(merk1, index) in currentVariation.properties" v-if="merk1.property.id == 23 && merk1.texts.value == 'Sup'">
                         <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/canoe-202-797327.png" v-for="(merk2, index) in currentVariation.properties" v-if="merk2.property.id == 24 && merk2.texts.value == 'Kajak'">
 
-                        <p v-for="(prop, index) in currentVariation.properties"><b>{{ prop.names.name }}</b>
-        <span>{{ property.texts.value  }}</span></p>
-
                     </div>
 
+                    <span class="articlenumber small text-muted">
+                      <b>{{ trans("Ceres::Template.singleItemNumber") }}</b>
+                      <span>${ currentVariation.variation.number }</span>
+                    </span>
 
+                    <span class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11">
+                      <b>${ property.property.names.name}</b>
+                      <span>${ prop.selection.name}</span>
+                    </span>
 
 
 
