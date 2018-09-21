@@ -718,7 +718,14 @@ button.btn.btn-block.btn-default {
   color: #fff;
 }
 
+.alleinstellung img{
+  float: left;
+  margin-right: 1rem;
+}
 
+.alleinstellung p {
+  margin-top: 2rem;
+}
 
 
 
