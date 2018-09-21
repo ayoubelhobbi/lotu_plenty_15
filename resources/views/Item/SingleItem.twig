@@ -26,6 +26,8 @@
                         </span>
                     </h1>
 
+                    <p v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 22">${ merk.texts.value }</p>
+
                     {% if ('item.shortDescription' in itemData or 'all' in itemData)%}
                         <p class="single-description" v-if="currentVariation.texts.shortDescription !== ''" v-html="currentVariation.texts.shortDescription"></p>
                     {% endif %}
