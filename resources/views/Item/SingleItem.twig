@@ -10,6 +10,21 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <item-image-carousel image-url-accessor="url" template="#vue-item-image-carousel"></item-image-carousel>
+
+                            <div class="icons">
+                                 <div class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schlauchboot'">
+                                     <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/icon.png">
+                                   </div>
+                                       <br/>
+                                 <div class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Kajak'">
+                                       <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/kayak.png">
+                                   </div>
+                                       <br/>
+                                 <div class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Einzeln'">
+                                       <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/einzeln.png">
+                                   </div>
+                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -25,32 +40,6 @@
                             ${ currentVariation | itemName }
                         </span>
                     </h1>
-
-
-
-                    <div class="icons">
-                        <img src="http://www.androidfreeware.net/software_images/german-television-channels.thumb.png" v-for="(merk, index) in currentVariation.properties" v-if="merk.property.id == 22 && merk.texts.value == 'Schlauchboot'">
-                        <img src="https://www.windsurfing.hr/img/iconi/sup.png" v-for="(merk1, index) in currentVariation.properties" v-if="merk1.property.id == 23 && merk1.texts.value == 'Sup'">
-                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/canoe-202-797327.png" v-for="(merk2, index) in currentVariation.properties" v-if="merk2.property.id == 24 && merk2.texts.value == 'Kajak'">
-
-                    </div>
-
-
-
-                    <span class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schlauchboot'">
-                        <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/icon.png">
-                      </span>
-<br/>
-                    <span class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Kajak'">
-                          <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/kayak.png">
-                      </span>
-<br/>
-                    <span class="articlenumber small text-muted" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Einzeln'">
-                          <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/einzeln.png">
-                      </span>
-
-
-
 
                     {% if ('item.shortDescription' in itemData or 'all' in itemData)%}
                         <p class="single-description" v-if="currentVariation.texts.shortDescription !== ''" v-html="currentVariation.texts.shortDescription"></p>
