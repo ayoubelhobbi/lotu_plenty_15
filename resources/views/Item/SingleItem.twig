@@ -33,8 +33,7 @@
                         <img src="https://www.windsurfing.hr/img/iconi/sup.png" v-for="(merk1, index) in currentVariation.properties" v-if="merk1.property.id == 23 && merk1.texts.value == 'Sup'">
                         <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/canoe-202-797327.png" v-for="(merk2, index) in currentVariation.properties" v-if="merk2.property.id == 24 && merk2.texts.value == 'Kajak'">
 
-
-                        <p v-for="(merk3, index) in currentVariation.properties" v-if="merk3.property.id == 11 && merk3.texts.value == 'Schlauchboot'">${merk.texts.value}</p>
+                        <p v-for="(prop, index) in currentVariation.properties" v-if="prop.selection.name == 'Schlauchboot'">Hier muss das Beispiel aus allen Schlauchbooten angezeigt werden</p>
 
                     </div>
 
