@@ -123,6 +123,8 @@
 
                       <div class="WelchesBoot">
 
+                      <h3 v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schlauchboot' || property.property.names.name == 'Kajak' || property.property.names.name == 'Sup' || property.property.names.name == 'Aluminium Boot' || property.property.names.name == 'Yacht' || property.property.names.name == 'Belly Boot'">Dieses Zubehör ist für folgende Schlauchboote geeignet:</h3>
+                      
                         <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schlauchboot'">
                             <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/schlauchboot.png">
                           </span>
@@ -141,7 +143,7 @@
                           <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Belly Boot'">
                                 <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/belly.png">
                           </span>
-                          
+
 
                       </div>
 
