@@ -727,12 +727,13 @@ button.btn.btn-block.btn-default {
   float: left;
   margin-right: 1rem;
   margin-top: 1rem;
-  width: 4rem;
+  width: 5rem;
 }
 
 .alleinstellung p {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   font-size: 1.5rem;
+  font-family: 'akaChen', sans-serif;
 }
 
 .iconsSingleItem span {
