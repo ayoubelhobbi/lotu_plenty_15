@@ -719,8 +719,12 @@ button.btn.btn-block.btn-default {
 }
 
 .home_icons {
-    padding: 2rem;
-    background-color: #222222;
+  padding-left: 6rem;
+  background-color: #222222;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
 }
 
 .home_icons img {
