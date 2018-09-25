@@ -722,7 +722,12 @@ button.btn.btn-block.btn-default {
   background-color: #222222;
 }
 
-.alleinstellung img{
+.home_icons {
+    padding: 2rem;
+    background-color: #222222;
+}
+
+.home_icons img {
   float: left;
   margin-right: 1rem;
   margin-top: 1rem;
