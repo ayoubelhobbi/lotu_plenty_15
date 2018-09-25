@@ -144,10 +144,6 @@
 
                       </div>
 
-                        <hr>
-
-
-
                       <div class="welcheMontage">
 
                           <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Kleben'">
@@ -165,12 +161,6 @@
 
                       </div>
 
-
-                      <div class="beispiel"></div>
-
-                      <hr>
-
-
                       <div class="zubeOhalt">
 
                           <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Halterung'">
@@ -183,9 +173,6 @@
                       </div>
 
                     </div>
-
-                     <hr>
-
 
                     <span class="vat small text-muted">
                         * {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
