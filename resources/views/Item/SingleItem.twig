@@ -1,6 +1,7 @@
 {% set itemData = config("Ceres.item.data") | split(', ') %}
 {% set enabledRoutes = config("IO.routing.enabled_routes") | split(', ') %}
 {% set shippingCat = config("Ceres.global.shippingCostsCategoryId") %}
+{% set contactClass = services.customer.getContactClassId() %}
 
 <script type="x/template" id="vue-single-item">
     <div>
@@ -37,6 +38,13 @@
                         <span class="articlenumber small text-muted">
                             <b>{{ trans("Ceres::Template.singleItemNumber") }}</b>
                             <span>${ currentVariation.variation.number }</span>
+
+                            {% if contactClass == 2 %}
+
+                            <span v-if="currentVariation.stock.net !== 0" class="verfuegbare_menge"> Noch <b>${ currentVariation.stock.net } verfügbar</b></span>
+
+                            {% endif %}
+
                         </span>
                     </div>
 

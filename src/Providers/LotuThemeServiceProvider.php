@@ -9,6 +9,7 @@ use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
 use IO\Helper\ComponentContainer;
 use IO\Helper\TemplateContainer;
+use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 
 /**
  * Class LotuThemeServiceProvider
@@ -37,5 +38,17 @@ class LotuThemeServiceProvider extends ServiceProvider
 							 $container->setNewComponentTemplate('LotuTheme::Item.SingleItem');
 					 }
 			 }, self::PRIORITY);
+
+       $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
+      $templateContainer->setTemplates([
+          ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'LotuTheme::ResultFields.SingleItemWrapper'
+      ]);
+     }, 0);
+
+        $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
+      $templateContainer->setTemplates([
+          ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'LotuTheme::ResultFields.ListItem'
+      ]);
+    }, 0);
     }
 }
