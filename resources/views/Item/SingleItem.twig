@@ -216,12 +216,15 @@
                     <div class="tab-content">
                         {% if 'item.description' in itemData or 'all' in itemData %}
                             <div class="tab-pane active" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
-
-
-                                <div class="m-y-2" v-html="currentVariation.texts.description">
-                                </div>
+                              <div class="youtubeVideo">
+                                <div class="videoWrapper1">
+                                <iframe v-for="(merk, index) in currentVariation.properties" width="100%" height="355" v-bind:src="merk.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
                             </div>
-                        {% endif %}
+
+                            <div class="m-y-2" v-html="currentVariation.texts.description"></div>
+                          </div>
+                    {% endif %}
 
                         {% if 'item.technical_data' in itemData or 'all' in itemData %}
                             <div :class="{ 'active': !isDescriptionTabActive && isTechnicalDataTabActive }" class="tab-pane" :id="'data-' + currentVariation.variation.id" role="tabpanel" v-if="isTechnicalDataTabActive">
