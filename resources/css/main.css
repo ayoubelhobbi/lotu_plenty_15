@@ -996,11 +996,11 @@ button.btn.btn-block.btn-default {
 }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 a.nav-link.active:hover, a.nav-link:hover {
   color: #000 !important;
 }
-}
+}*/
 
 @media (min-width: 900px) {
   .pricing-table {
