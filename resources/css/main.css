@@ -783,7 +783,9 @@ button.btn.btn-block.btn-default {
   flex-direction: column;
 }
 
-
+.btn-link {
+  color: #ffce00;
+}
 
 .pricing-table * {
   text-align: center;
