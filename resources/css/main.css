@@ -155,10 +155,14 @@ body > #vue-app, body > #vue-error {
   color: #fff;
 }
 
+.list-controls {
+  margin-bottom: 1rem !important;
+}
 
 .list-controls .list-controls-inner {
-  background: none;
+  background: #ffce00;
   margin-bottom: 0rem !important;
+  padding: 0;
 }
 
 .wrapper-main > nav.container-max {
@@ -1112,8 +1116,8 @@ a.nav-link.active:hover, a.nav-link:hover {
      background-position: right top;
     background-image: url(https://image.flaticon.com/icons/svg/987/987941.svg);
     background-repeat: no-repeat;*/
-    padding-top: 3rem;
-    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
   }
 }
 
