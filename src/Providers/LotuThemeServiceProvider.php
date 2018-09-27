@@ -9,6 +9,7 @@ use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
 use IO\Helper\ComponentContainer;
 use IO\Helper\TemplateContainer;
+use IO\Helper\ResourceContainer;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 
 /**
@@ -26,6 +27,12 @@ class LotuThemeServiceProvider extends ServiceProvider
 
     public function boot(Dispatcher $dispatcher)
     {
+
+      $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
+       {
+           $container->addScriptTemplate('LotuTheme::ThemeScript');
+       }, self::PRIORITY);
+
       $dispatcher->listen('IO.init.templates', function(Partial $partial)
 			 {
 					$partial->set('footer', 'LotuTheme::ThemeFooter');
