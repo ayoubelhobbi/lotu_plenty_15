@@ -924,6 +924,11 @@ button.btn.btn-block.btn-default {
     font-weight: bold;
 }
 
+.bg-info {
+  color: #222222;
+  background-color: #ffce00 !important;
+}
+
 .closeH:hover,
 .closeH:focus {
     color: #000;
