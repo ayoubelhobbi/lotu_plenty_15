@@ -925,7 +925,7 @@ button.btn.btn-block.btn-default {
 }
 
 .bg-info {
-  color: #222222;
+  color: #222222 !important;
   background-color: #ffce00 !important;
 }
 
