@@ -160,7 +160,7 @@ body > #vue-app, body > #vue-error {
 }
 
 .list-controls .list-controls-inner {
-  background: #ffce00;
+  background: #222222;
   margin-bottom: 0rem !important;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
