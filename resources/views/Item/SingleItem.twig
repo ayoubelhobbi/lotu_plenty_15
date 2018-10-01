@@ -131,9 +131,25 @@
 
                       <div class="WelchesBoot">
 
+
+                      {% for property in item.documents[0].data.properties %}
+                        {% if property.property.id == 16 %}
+                              <img src="https://cdn0.iconfinder.com/data/icons/travel-and-destination-1/64/sailing-boat-yacht-water-luxury-transportation-128.png">
+                          {% else %}
+                              <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/yacht.png">
+                        {% endif %}
+
+                      {% endfor %}
+
+
+
                           <h3>Bootstyp</h3>
 
                           <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schlauchboot'">
+                            <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/schlauchboot.png">
+                          </span>
+
+                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-else-if="property.property.names.name !== 'Schlauchboot'">
                             <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/schlauchboot.png">
                           </span>
 
