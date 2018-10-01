@@ -146,8 +146,7 @@
                                 <img src="https://www.lotu.de/images/gallery/icons/aluminium.png">
                           </span>
 
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 15">
-                                <p>Alternative</p>
+                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 15 && property.property.names.name == 'Aluminium Boot'">
                                 <b>${ property.property.names.name}</b>
                                 <img src="https://www.lotu.de/images/gallery/icons/aluminium1.png">
                           </span>
@@ -218,7 +217,7 @@
                               <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/halterung.png">
                             </span>
                             <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Zubehör'">
-                              <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/zubeho_r.png">
+                              <img src="https://www.lotu.de/images/gallery/icons/zubehoer.png">
                             </span>
 
                         </div>
