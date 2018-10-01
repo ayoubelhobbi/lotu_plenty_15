@@ -129,69 +129,95 @@
 
                     <div class="iconsSingleItem">
 
-                      <div class="WelchesBoot">
+  <div class="WelchesBoot">
 
-                          <h3>Bootstyp</h3>
+      <h3>Bootstyp</h3>
 
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schlauchboot'">
-                              <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/yacht.png">
-                          </span>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schlauchboot'">
+          <img src="https://www.lotu.de/images/gallery/icons/schlauchboot.png">
+      </span>
 
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-else-if="property.property.names.name !== 'Schlauchboot'">
-                            <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/schlauchboot.png">
-                          </span>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11 && property.property.names.name !== 'Schlauchboot' ">
+          <img src="https://www.lotu.de/images/gallery/icons/schlauchboot1.png">
+      </span>
 
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Kajak'">
-                            <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/kajak.png">
-                          </span>
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Sup'">
-                                <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/sup.png">
-                          </span>
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Aluminium Boot'">
-                                <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/aluminium.png">
-                          </span>
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Yacht'">
-                                <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/yacht.png">
-                          </span>
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Belly Boot'">
-                                <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/belly.png">
-                          </span>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Aluminium Boot'">
+            <img src="https://www.lotu.de/images/gallery/icons/aluminium.png">
+      </span>
 
-                      </div>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 15 && property.property.names.name !== 'Aluminium Boot'">
+            <img src="https://www.lotu.de/images/gallery/icons/aluminium1.png">
+      </span>
 
-                      <div class="welcheMontage">
-                            <hr>
-                          <h3>Montage</h3>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Kajak'">
+        <img src="https://www.lotu.de/images/gallery/icons/kajak.png">
+      </span>
 
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Kleben'">
-                            <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/kleben.png">
-                          </span>
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schrauben'">
-                            <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/schrauben.png">
-                          </span>
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Klemmen'">
-                                <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/klemmen.png">
-                          </span>
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Keine Montage notwendig'">
-                                <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/ohnemontage.png">
-                          </span>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 12 && property.property.names.name !== 'Kajak'">
+        <img src="https://www.lotu.de/images/gallery/icons/kajak1.png">
+      </span>
 
-                      </div>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Belly Boot'">
+            <img src="https://www.lotu.de/images/gallery/icons/belly.png">
+      </span>
 
-                      <div class="zubeOhalt">
-                          <hr>
-                        <h3>Fasten</h3>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 17 && property.property.names.name !== 'Belly Boot'">
+            <img src="https://www.lotu.de/images/gallery/icons/belly1.png">
+      </span>
 
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Halterung'">
-                            <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/halterung.png">
-                          </span>
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Zubehör'">
-                            <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/zubeho_r.png">
-                          </span>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Yacht'">
+            <img src="https://www.lotu.de/images/gallery/icons/yacht.png">
+      </span>
 
-                      </div>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 16 && property.property.names.name !== 'Yacht'">
+            <img src="https://www.lotu.de/images/gallery/icons/yacht1.png">
+      </span>
 
-                    </div>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Sup'">
+            <img src="https://www.lotu.de/images/gallery/icons/sup.png">
+      </span>
+
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 14 && property.property.names.name !== 'Sup'">
+            <img src="https://www.lotu.de/images/gallery/icons/sup1.png">
+      </span>
+
+
+  </div>
+
+  <div class="welcheMontage">
+        <hr>
+      <h3>Montage</h3>
+
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Schrauben'">
+        <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/schrauben.png">
+      </span>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Kleben'">
+        <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/kleben.png">
+      </span>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Klemmen'">
+            <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/klemmen.png">
+      </span>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Keine Montage notwendig'">
+            <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/ohnemontage.png">
+      </span>
+
+  </div>
+
+  <div class="zubeOhalt">
+      <hr>
+    <h3>Fasten</h3>
+
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Halterung'">
+        <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/halterung.png">
+      </span>
+      <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.names.name == 'Zubehör'">
+        <img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/zubeho_r.png">
+      </span>
+
+  </div>
+
+</div>
+
 
                     <span class="vat small text-muted">
                         * {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
