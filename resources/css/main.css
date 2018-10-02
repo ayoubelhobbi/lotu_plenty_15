@@ -751,6 +751,11 @@ button.btn.btn-block.btn-default {
     width: 100%;
 }
 
+.opacityIcons img{
+  opacity: 0.5;
+}
+
+
 .PricingContainer h2 {
 
 	text-align: center;
