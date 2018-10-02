@@ -738,6 +738,10 @@ button.btn.btn-block.btn-default {
   display: inline-block;
 }
 
+.gruppeIcons {
+  margin-bottom: 2rem;
+}
+
 .iconsImages img {
   width: 5rem;
   margin-right: 0.1rem;
