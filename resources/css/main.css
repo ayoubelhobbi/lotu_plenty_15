@@ -755,6 +755,9 @@ button.btn.btn-block.btn-default {
   opacity: 0.3;
 }
 
+.owl-carousel .owl-dots {
+  display: none;
+}
 
 .PricingContainer h2 {
 
