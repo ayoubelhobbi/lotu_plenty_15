@@ -1,1 +1,5 @@
 {% include getPartial('footer') %}
+
+{% for scriptTemplate in get_additional_scripts() %}
+    {% include scriptTemplate.path ignore missing with scriptTemplate.params %}
+{% endfor %}
