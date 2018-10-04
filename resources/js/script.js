@@ -7,3 +7,7 @@ tippy('.iconsImages img', {
   duration: 500,
   animation: 'scale'
 })
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
