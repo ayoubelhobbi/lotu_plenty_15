@@ -282,6 +282,10 @@ body > #vue-app, body > #vue-error {
     color: #222222;
 }
 
+.list-controls #filterCollapse {
+  margin-left: -10px;
+
+}
 .page-link {
   background-color: transparent;
   border: none;
