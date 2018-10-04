@@ -7,5 +7,3 @@ tippy('.iconsImages img', {
   duration: 500,
   animation: 'scale'
 })
-
-alert('Hallo Welt');
