@@ -331,6 +331,10 @@ body > #vue-app, body > #vue-error {
   border: 1px solid #ffce00;
 }
 
+header.basket-header.p-a-1 {
+  font-family: "akaChen", sans-serif;
+}
+
 .custom-select{
   background: url(https://www.lotu.de/images/arrow-bottom.png);
   color: #fff;
