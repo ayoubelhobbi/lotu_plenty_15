@@ -967,6 +967,10 @@ button.btn.btn-block.btn-default {
   background-color: #ffce00 !important;
 }
 
+.wrapper-inner.basket-preview {
+    background: #222222;
+}
+
 .closeH:hover,
 .closeH:focus {
     color: #000;
@@ -1249,10 +1253,6 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 
 .cmp-product-thumb .thumb-content {
   background-color: transparent;
-}
-
-span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, span.vat.small.text-muted {
-  background: transparent;
 }
 
 .owl-thumbs .owl-thumb {
