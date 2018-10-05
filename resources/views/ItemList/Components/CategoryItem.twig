@@ -51,7 +51,7 @@
                 <a :href="itemData | itemURL" class="thumb-title small">
                     ${ itemData | itemName }
                 </a>
-                <span>${ itemData.variation.number }</span>
+                <p class="small">Art.-Nr.: ${ itemData.variation.number }</p>
                 <div class="thumb-meta">
                     <div class="prices">
                         <div v-if="itemData.prices.rrp && itemData.prices.rrp.price.value > 0 && itemData.prices.rrp.price.value > itemData.prices.default.unitPrice.value" class="price-view-port">
@@ -63,7 +63,6 @@
                         <div class="price">
                             ${ itemData.prices.default.unitPrice.formatted } *
                         </div>
-                        <p>Beispiel</p>
                     </div>
 
                     <div class="category-unit-price" v-if="!(itemData.unit.unitOfMeasurement === 'C62' && itemData.unit.content === 1)">
