@@ -536,6 +536,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
     width: 30px;
 }
 
+.basket-item-container .basket-item .basket-item-container-right .price-box {
+  min-width: 80px;
+}
+
 .basket-item-container a {
   color: #fff;
 }
