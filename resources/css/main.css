@@ -1142,6 +1142,11 @@ a.nav-link.active:hover, a.nav-link:hover {
 .cmp-product-thumb .thumb-content {
     padding: 1.3rem;
 }
+
+.owl-thumbs .owl-thumb {
+	height: 3.3rem;
+}
+
 }
 
 @media (min-width: 544px) {
