@@ -318,8 +318,8 @@ body > #vue-app, body > #vue-error {
 .qty-box .qty-btn-container {
   border: 2px solid #ffce00;
   background: #000;
-  border-top-right-radius: 1.4rem;
-  border-bottom-right-radius: 1.4rem;
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
   width: 50px;
 }
 
@@ -524,7 +524,16 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 
 .basket-item-container .qty-box .qty-input {
-  width: 48px;
+  width: 35px;
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+
+.basket-item-container-right .qty-box .qty-btn-container {
+    border: 1px solid #ffce00;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    width: 30px;
 }
 
 .basket-item-container a {
