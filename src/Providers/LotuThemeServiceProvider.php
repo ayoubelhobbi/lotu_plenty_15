@@ -57,7 +57,7 @@ class LotuThemeServiceProvider extends ServiceProvider
      {
         $container->setNewComponentTemplate('LotuTheme::ItemList.Components.CategoryItem');
      }
-      }, PRIORITY);
+      }, self::PRIORITY);
 
         $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
