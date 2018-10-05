@@ -52,10 +52,22 @@ class LotuThemeServiceProvider extends ServiceProvider
       ]);
      }, 0);
 
+     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+     if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.CategoryItem')
+     {
+        $container->setNewComponentTemplate('LotuTheme::ItemList.Components.CategoryItem');
+     }
+      }, PRIORITY);
+
         $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
           ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'LotuTheme::ResultFields.ListItem'
       ]);
     }, 0);
+
+
+
+
+
     }
 }
