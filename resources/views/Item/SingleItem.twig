@@ -256,10 +256,6 @@
                           <hr>
                         </div>
 
-                        <p id="demo">Hier klicken</p>
-
-                        <button onclick="myFunction()">Hallo Welt</button>
-
                     </div>
 
 
@@ -420,20 +416,4 @@
             <slot name="FeedbackContainer"></slot>
         </div>
     </div>
-</script>
-
-<script>
-tippy('.iconsImages img', {
-  content: "I'm a tooltip!",
-  delay: 100,
-  arrow: true,
-  arrowType: 'round',
-  size: 'large',
-  duration: 500,
-  animation: 'scale'
-})
-
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hallo Welt";
-}
 </script>
