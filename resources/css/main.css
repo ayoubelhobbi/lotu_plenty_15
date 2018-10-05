@@ -1067,6 +1067,13 @@ a.nav-link.active:hover, a.nav-link:hover {
 }
 }
 
+#single-carousel .owl-item img {
+  height: auto;
+}
+
+.owl-stage-outer.owl-height {
+    height: auto !important;
+}
 
 @media (min-width: 1200px) {
 #single-carousel .owl-item img {
