@@ -318,8 +318,8 @@ body > #vue-app, body > #vue-error {
 .qty-box .qty-btn-container {
   border: 2px solid #ffce00;
   background: #000;
-  border-top-right-radius: 1.2rem;
-  border-bottom-right-radius: 1.2rem;
+  border-top-right-radius: 1.4rem;
+  border-bottom-right-radius: 1.4rem;
   width: 50px;
 }
 
