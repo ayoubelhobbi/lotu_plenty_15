@@ -58,10 +58,11 @@
                                 ${ itemData.prices.rrp.price.formatted }
                             </del>
                         </div>
-                        <div><p>Beispiel</p></div>
+
                         <div class="price">
                             ${ itemData.prices.default.unitPrice.formatted } *
                         </div>
+                        <p>Beispiel</p>
                     </div>
 
                     <div class="category-unit-price" v-if="!(itemData.unit.unitOfMeasurement === 'C62' && itemData.unit.content === 1)">
