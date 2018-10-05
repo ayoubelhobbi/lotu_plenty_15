@@ -1150,10 +1150,6 @@ a.nav-link.active:hover, a.nav-link:hover {
     padding: 1.3rem;
 }
 
-.owl-thumbs .owl-thumb {
-	height: 3.3rem;
-}
-
 }
 
 @media (min-width: 544px) {
@@ -1237,6 +1233,11 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, span.vat.small.text-muted {
   background: transparent;
 }
+
+.owl-thumbs .owl-thumb {
+	height: 3.3rem;
+}
+
 }
 
 @media (min-width: 992px){
