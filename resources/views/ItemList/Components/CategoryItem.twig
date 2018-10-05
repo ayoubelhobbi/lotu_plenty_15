@@ -51,7 +51,7 @@
                 <a :href="itemData | itemURL" class="thumb-title small">
                     ${ itemData | itemName }
                 </a>
-                <span>${ itemData.variation.name }</span>
+                <span>${ itemData.variation.number }</span>
                 <div class="thumb-meta">
                     <div class="prices">
                         <div v-if="itemData.prices.rrp && itemData.prices.rrp.price.value > 0 && itemData.prices.rrp.price.value > itemData.prices.default.unitPrice.value" class="price-view-port">
