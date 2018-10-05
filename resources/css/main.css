@@ -201,6 +201,10 @@ body > #vue-app, body > #vue-error {
     font-size: 1.8rem;
 }
 
+.iconsSingleItem h4 {
+  font-size: 1.8rem;
+}
+
 .breadcrumb-item a {
     color: #ffffff;
 }
