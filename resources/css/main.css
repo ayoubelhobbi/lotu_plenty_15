@@ -971,6 +971,10 @@ button.btn.btn-block.btn-default {
     background: #222222;
 }
 
+.basket-preview .close {
+    color: #fff;
+}
+
 .closeH:hover,
 .closeH:focus {
     color: #000;
