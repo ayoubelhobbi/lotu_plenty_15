@@ -460,7 +460,11 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 }
 
 .cmp-contact h1{
-  color: #000;
+  color: #ffffff;
+}
+
+.page-content.contact:not(.checkout):not(.basket) {
+  background-color: #222222;
 }
 
 /* Responsive -- Mobile*/
