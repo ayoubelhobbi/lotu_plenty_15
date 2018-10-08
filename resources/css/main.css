@@ -1118,6 +1118,10 @@ a.nav-link.active:hover, a.nav-link:hover {
   height: auto;
 }
 
+.single #single-carousel {
+  background: transparent;
+}
+
 .owl-stage-outer.owl-height {
     height: auto !important;
 }
