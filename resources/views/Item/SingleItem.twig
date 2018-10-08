@@ -13,6 +13,135 @@
                             <item-image-carousel image-url-accessor="url" template="#vue-item-image-carousel"></item-image-carousel>
 
                         </div>
+                        <div class="iconsSingleItem">
+
+                          <div class="gruppeIcons">
+
+                              <h4>Bootstyp</h4>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11">
+                                  <span v-if="property.selection.name == 'Schlauchboot'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/schlauchboot.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/schlauchboot1.png">
+                                  </span>
+                              </span>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 15">
+                                  <span v-if="property.selection.name == 'Aluminium Boot'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/aluminium.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/aluminium1.png">
+                                  </span>
+                              </span>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 12">
+                                  <span v-if="property.selection.name == 'Kajak'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/kajak.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/kajak1.png">
+                                  </span>
+                              </span>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 17">
+                                  <span v-if="property.selection.name == 'Belly Boot'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/belly.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/belly1.png">
+                                  </span>
+                              </span>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 16">
+                                  <span v-if="property.selection.name == 'Yacht'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/yacht.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/yacht1.png">
+                                  </span>
+                              </span>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 14">
+                                  <span v-if="property.selection.name == 'Sup'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/sup.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/sup1.png">
+                                  </span>
+                              </span>
+
+                          </div>
+
+                          <div class="gruppeIcons">
+                                <hr>
+                              <h4>Montage</h4>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 8">
+                                  <span v-if="property.selection.name == 'Schrauben'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/schrauben.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/schrauben1.png">
+                                  </span>
+                              </span>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 7">
+                                  <span v-if="property.selection.name == 'Kleben'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/kleben.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/kleben1.png">
+                                  </span>
+                              </span>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 9">
+                                  <span v-if="property.selection.name == 'Klemmen'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/klemmen.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/klemmen1.png">
+                                  </span>
+                              </span>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 10">
+                                  <span v-if="property.selection.name == 'Keine Montage notwendig'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/nomount.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/nomount1.png">
+                                  </span>
+                              </span>
+
+
+                          </div>
+
+                            <div class="gruppeIcons">
+                                <hr>
+                              <h4>Fasten</h4>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 18">
+                                  <span v-if="property.selection.name == 'Halterung'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/halterung.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/halterung1.png">
+                                  </span>
+                              </span>
+
+                              <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 19">
+                                  <span v-if="property.selection.name == 'Zubehör'">
+                                    <img src="https://www.lotu.de/images/gallery/icons/zubehoer.png">
+                                  </span>
+                                  <span v-else-if="property.selection.name == null" class="opacityIcons">
+                                    <img src="https://www.lotu.de/images/gallery/icons/zubehoer1.png">
+                                  </span>
+                              </span>
+                              <hr>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -42,7 +171,7 @@
                             {% if contactClass == 2 %}
 
                             <span v-if="currentVariation.stock.net !== 0" class="verfuegbare_menge"> Noch <b>${ currentVariation.stock.net } verfügbar</b></span>
-                            
+
                             {% endif %}
 
                         </span>
@@ -127,135 +256,7 @@
 
                     <hr>
 
-                    <div class="iconsSingleItem">
 
-                      <div class="gruppeIcons">
-
-                          <h4>Bootstyp</h4>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11">
-                              <span v-if="property.selection.name == 'Schlauchboot'">
-                                <img src="https://www.lotu.de/images/gallery/icons/schlauchboot.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/schlauchboot1.png">
-                              </span>
-                          </span>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 15">
-                              <span v-if="property.selection.name == 'Aluminium Boot'">
-                                <img src="https://www.lotu.de/images/gallery/icons/aluminium.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/aluminium1.png">
-                              </span>
-                          </span>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 12">
-                              <span v-if="property.selection.name == 'Kajak'">
-                                <img src="https://www.lotu.de/images/gallery/icons/kajak.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/kajak1.png">
-                              </span>
-                          </span>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 17">
-                              <span v-if="property.selection.name == 'Belly Boot'">
-                                <img src="https://www.lotu.de/images/gallery/icons/belly.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/belly1.png">
-                              </span>
-                          </span>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 16">
-                              <span v-if="property.selection.name == 'Yacht'">
-                                <img src="https://www.lotu.de/images/gallery/icons/yacht.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/yacht1.png">
-                              </span>
-                          </span>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 14">
-                              <span v-if="property.selection.name == 'Sup'">
-                                <img src="https://www.lotu.de/images/gallery/icons/sup.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/sup1.png">
-                              </span>
-                          </span>
-
-                      </div>
-
-                      <div class="gruppeIcons">
-                            <hr>
-                          <h4>Montage</h4>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 8">
-                              <span v-if="property.selection.name == 'Schrauben'">
-                                <img src="https://www.lotu.de/images/gallery/icons/schrauben.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/schrauben1.png">
-                              </span>
-                          </span>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 7">
-                              <span v-if="property.selection.name == 'Kleben'">
-                                <img src="https://www.lotu.de/images/gallery/icons/kleben.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/kleben1.png">
-                              </span>
-                          </span>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 9">
-                              <span v-if="property.selection.name == 'Klemmen'">
-                                <img src="https://www.lotu.de/images/gallery/icons/klemmen.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/klemmen1.png">
-                              </span>
-                          </span>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 10">
-                              <span v-if="property.selection.name == 'Keine Montage notwendig'">
-                                <img src="https://www.lotu.de/images/gallery/icons/nomount.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/nomount1.png">
-                              </span>
-                          </span>
-
-
-                      </div>
-
-                        <div class="gruppeIcons">
-                            <hr>
-                          <h4>Fasten</h4>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 18">
-                              <span v-if="property.selection.name == 'Halterung'">
-                                <img src="https://www.lotu.de/images/gallery/icons/halterung.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/halterung1.png">
-                              </span>
-                          </span>
-
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 19">
-                              <span v-if="property.selection.name == 'Zubehör'">
-                                <img src="https://www.lotu.de/images/gallery/icons/zubehoer.png">
-                              </span>
-                              <span v-else-if="property.selection.name == null" class="opacityIcons">
-                                <img src="https://www.lotu.de/images/gallery/icons/zubehoer1.png">
-                              </span>
-                          </span>
-                          <hr>
-                        </div>
-                    </div>
 
                     <span class="vat small text-muted">
                         * {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
