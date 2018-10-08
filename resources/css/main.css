@@ -463,6 +463,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
     color: #ffffff;
 }
 
+.cmp-contact .contact-card p a {
+  color: #fff;
+}
+
 .cmp-contact h1{
   color: #ffffff;
 }
