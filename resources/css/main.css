@@ -459,6 +459,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
   text-shadow: 0px 0px 1px rgba(0, 0, 0, .6);
 }
 
+.cmp-contact {
+    color: #ffffff;
+}
+
 .cmp-contact h1{
   color: #ffffff;
 }
