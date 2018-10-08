@@ -1118,6 +1118,10 @@ a.nav-link.active:hover, a.nav-link:hover {
   height: auto;
 }
 
+.cmp-product-thumb .main-image {
+  background-color: #222222;
+}
+
 .single #single-carousel {
   background: transparent;
 }
