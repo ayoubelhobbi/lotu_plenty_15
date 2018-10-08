@@ -1342,16 +1342,19 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 }
 
 
+
+}
+.single .nav-tabs .nav-item .nav-link {
+    font-size: 1.2em;
+    font-family: 'akaChen', sans-serif !important;
+}
+}
+
 @media (min-width: 768px){
 .single .nav-tabs .nav-item .nav-link.active, .single .nav-tabs .nav-item .nav-link:hover {
     border: 1px solid #ffce00;
     color: #ffffff;
     background: #222222;
-}
-}
-.single .nav-tabs .nav-item .nav-link {
-    font-size: 1.2em;
-    font-family: 'akaChen', sans-serif !important;
 }
 }
 
