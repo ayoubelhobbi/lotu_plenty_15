@@ -202,7 +202,9 @@ body > #vue-app, body > #vue-error {
 }
 
 .iconsSingleItem h4 {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif !important;
+  margin-bottom: 1rem;
 }
 
 .breadcrumb-item a {
@@ -779,7 +781,8 @@ button.btn.btn-block.btn-default {
 }
 
 .gruppeIcons {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .iconsImages img {
