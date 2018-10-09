@@ -543,11 +543,11 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 
 .card-header h5, .cmp-totals h3 {
-  color: #000;
+  color: #ffffff;
 }
 
 .item-details a {
-  color: #222222;
+  color: ##ffffff;
 }
 
 .payment-link-style {
@@ -636,6 +636,18 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 .basket-item-container-right .qty-box .qty-input {
   border: 1px solid #ffce00;
   height: 30px;
+}
+
+.card, .cmp-address-list .items > div:first-child {
+  background-color: #000;
+}
+
+.page-content.basket:not(.checkout):not(.basket), .page-content.checkout:not(.checkout):not(.basket), .page-content.contact:not(.checkout):not(.basket), .page-content.myaccount:not(.checkout):not(.basket) {
+    background-color: #222222;
+}
+
+.card-header {
+  background-color: #000000;
 }
 
 .basket h1 {
