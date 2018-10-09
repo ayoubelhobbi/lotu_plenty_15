@@ -547,7 +547,11 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 }
 
 .item-details a {
-  color: ##ffffff;
+  color: #ffffff;
+}
+
+.page-content.basket, .page-content.checkout, .page-content.contact, .page-content.myaccount {
+  color: #ffffff;
 }
 
 .payment-link-style {
