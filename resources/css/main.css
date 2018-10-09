@@ -635,6 +635,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 
 .basket-item-container-right .qty-box .qty-input {
   border: 1px solid #ffce00;
+  height: 30px;
 }
 
 .basket h1 {
