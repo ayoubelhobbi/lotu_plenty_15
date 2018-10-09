@@ -499,6 +499,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
   color: #000000;
 }
 
+.modal-footer {
+  border-top: none;
+}
+
 .modal-footer a {
   color: #000;
   margin-left: 5px;
