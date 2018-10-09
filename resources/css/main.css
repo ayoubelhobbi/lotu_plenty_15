@@ -571,6 +571,8 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
     border-top-right-radius: 1.2rem;
     border-bottom-right-radius: 1.2rem;
     width: 30px;
+    border: 1px solid #ffce00;
+    height: 30px;
 }
 
 .basket-item-container .basket-item .basket-item-container-right .price-box {
@@ -629,10 +631,6 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 .widget-image-carousel.widget-primary:hover .widget-caption h2, .widget-image-carousel.widget-primary:hover .widget-caption .h2 {
   background-color: transparent;
   color: #ffce00;
-}
-
-.basket-item-container-right .qty-box .qty-btn-container {
-  border: 1px solid #ffce00;
 }
 
 .basket-item-container-right .qty-box .qty-input {
