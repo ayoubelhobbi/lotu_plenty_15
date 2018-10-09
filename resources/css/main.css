@@ -153,6 +153,7 @@ body > #vue-app, body > #vue-error {
 
 .sidebar-categories ul li.active ul li a {
   color: #fff;
+  padding-left: 2rem;
 }
 
 .list-controls {
