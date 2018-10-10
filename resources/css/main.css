@@ -408,6 +408,12 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   padding-bottom: 1rem;
 }
 
+.alert-info {
+  background-color: #222;
+  border-color: #ffce00;
+  color: #fff;
+}
+
 .availability_1, .availability_2 {
   background-color: transparent;
   color: #7ed321
