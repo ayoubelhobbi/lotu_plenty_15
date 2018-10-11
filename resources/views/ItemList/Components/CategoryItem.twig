@@ -78,6 +78,31 @@
                     {{ trans("Ceres::Template.itemExclusive") }}
                     <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.itemShippingCosts") }}">{{ trans("Ceres::Template.itemShippingCosts") }}</a>
                 </span>
+
+
+                <div class="farbenSwatches">
+
+
+                  <span v-for="(attribute, attributeId) in attributes">
+                    ${ attribute.name }
+                  </span>
+
+                  <span v-for="(attributeValue, attributeValueId) in attribute.values">
+
+                            ${ attributeValue }
+                        </span>
+
+
+
+
+
+
+
+
+
+                </div>
+
+
             </div>
             <!-- ./ITEM DETAILS  -->
         </div>
