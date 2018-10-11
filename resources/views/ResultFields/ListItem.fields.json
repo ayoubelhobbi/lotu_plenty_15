@@ -1,4 +1,6 @@
 [
+    "attributes.attribute.names.*",
+    "attributes.value.names.*",
     "images.all.url",
     "images.all.urlMiddle",
     "images.all.urlPreview",
