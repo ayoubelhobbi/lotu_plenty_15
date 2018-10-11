@@ -157,7 +157,7 @@ body > #vue-app, body > #vue-error {
 }
 
 .sidebar-categories ul li.active ul li ul li a {
-      padding-left: 4rem;
+      padding-left: 3.5rem;
 }
 
 .list-controls {
