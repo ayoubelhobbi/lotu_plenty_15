@@ -142,6 +142,7 @@ body > #vue-app, body > #vue-error {
   background-repeat: no-repeat;
   background-position: left;
   background-size: 10px;
+  font-size: 1.2rem;
 }
 .sidebar-categories ul li a:hover {
   background: none;
@@ -152,7 +153,6 @@ body > #vue-app, body > #vue-error {
 }
 
 .sidebar-categories ul li.active ul li a {
-  color: #fff;
   padding-left: 2rem;
 }
 
