@@ -59,14 +59,17 @@ class LotuThemeServiceProvider extends ServiceProvider
      }
       }, self::PRIORITY);
 
-        $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
+    $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
           ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'LotuTheme::ResultFields.ListItem'
       ]);
     }, 0);
 
-
-
+    $dispatcher->listen('IO.tpl.category.content', function(TemplateContainer $container, $templateData)
+				{
+					$container->setTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
+					return false;
+				}, 0);
 
 
     }
