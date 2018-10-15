@@ -1145,6 +1145,12 @@ button.btn.btn-block.btn-default {
 	height: 6.16rem;
 }
 
+.single .nav-tabs .nav-item .nav-link {
+    font-size: 1.2em;
+    font-family: 'akaChen', sans-serif !important;
+}
+
+
 .owl-thumbs .owl-thumb.active, .owl-thumbs .owl-thumb:hover {
   border: 1px solid #ffce00;
 }
@@ -1434,14 +1440,8 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
     font-size: 1.2em;
 }
 
+}
 
-
-}
-.single .nav-tabs .nav-item .nav-link {
-    font-size: 1.2em;
-    font-family: 'akaChen', sans-serif !important;
-}
-}
 
 @media (min-width: 768px){
 .single .nav-tabs .nav-item .nav-link.active, .single .nav-tabs .nav-item .nav-link:hover {
