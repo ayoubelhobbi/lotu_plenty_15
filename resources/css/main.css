@@ -183,8 +183,8 @@ body > #vue-app, body > #vue-error {
 }
 
 .cmp-method-list .method-list-item input:checked + label {
-  -webkit-box-shadow: inset 0 0 0 0.1rem #008ebd;
-    box-shadow: inset 0 0 0 0.1rem #008ebd;
+  -webkit-box-shadow: inset 0 0 0 0.1rem #ffce00;
+    box-shadow: inset 0 0 0 0.1rem #ffce00;
     background-color: #ffce00;
     color: #222;
 }
