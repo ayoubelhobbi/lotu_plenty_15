@@ -175,6 +175,12 @@ body > #vue-app, body > #vue-error {
   background: none;
 }
 
+.btn-success {
+  background-color: #ffce00;
+  border-color: #ffce00;
+  font-family: "akaChen", sans-serif;
+}
+
 .wrapper-main .navbar {
   background: none;
   border-bottom: transparent;
