@@ -709,6 +709,10 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   background-color: #000;
 }
 
+.add-item .fa {
+  color: #222222;
+}
+
 .page-content.basket:not(.checkout):not(.basket), .page-content.checkout:not(.checkout):not(.basket), .page-content.contact:not(.checkout):not(.basket), .page-content.myaccount:not(.checkout):not(.basket) {
     background-color: #222222;
 }
