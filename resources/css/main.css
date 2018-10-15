@@ -181,6 +181,13 @@ body > #vue-app, body > #vue-error {
   font-family: "akaChen", sans-serif;
 }
 
+.btn-success:hover {
+  color: #222222 !important;
+  background-color: #ffce00 !important;
+  border-color: #000 !important;
+  opacity: 0.8 !important;
+}
+
 .wrapper-main .navbar {
   background: none;
   border-bottom: transparent;
