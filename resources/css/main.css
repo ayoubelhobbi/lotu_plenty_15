@@ -688,6 +688,23 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   height: 30px;
 }
 
+.cmp-address-list .dropdown-menu {
+  border: 1px solid #ffce00;
+    background-color: #000;
+    color: #fff;
+}
+
+.cmp-address-list .item {
+  border-bottom: 1px solid #ffec00;
+}
+
+.cmp-address-list .item input:checked + .item-inner {
+  -webkit-box-shadow: inset 0 0 0 0.1rem #ffce00;
+  box-shadow: inset 0 0 0 0.1rem #ffce00;
+  color: #000;
+  background-color: #ffce00;
+}
+
 .card, .cmp-address-list .items > div:first-child {
   background-color: #000;
 }
