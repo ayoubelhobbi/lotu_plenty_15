@@ -397,10 +397,10 @@ header.basket-header.p-a-1 {
   background-size: 10px;
 }
 
-/*.input-unit {
+.input-unit {
   border: 2px solid #ffce00;
   border-radius: 1.4rem;
-}*/
+}
 
 .input-unit label, .input-unit .input-unit-label {
   color: #fff;
