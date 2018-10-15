@@ -197,6 +197,7 @@ body > #vue-app, body > #vue-error {
   background-color: #ffce00;
   border-color: #ffce00;
   font-family: "akaChen", sans-serif;
+  color: #222222;
 }
 
 .btn-success:hover {
