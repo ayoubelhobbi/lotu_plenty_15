@@ -171,6 +171,24 @@ body > #vue-app, body > #vue-error {
   border: 1px solid #ffce00;
 }
 
+.cmp-method-list .method-list-item label {
+  background: #000000;
+  border-radius: 0;
+  border: none;
+
+}
+
+.cmp-method-list .method-list-item > input:disabled ~ label {
+  opacity: 1;
+}
+
+.cmp-method-list .method-list-item input:checked + label {
+  -webkit-box-shadow: inset 0 0 0 0.1rem #008ebd;
+    box-shadow: inset 0 0 0 0.1rem #008ebd;
+    background-color: #ffce00;
+    color: #222;
+}
+
 .wrapper-main > nav.container-max {
   background: none;
 }
