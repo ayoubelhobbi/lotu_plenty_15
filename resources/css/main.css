@@ -171,6 +171,10 @@ body > #vue-app, body > #vue-error {
   border: 1px solid #ffce00;
 }
 
+.cmp-method-list .method-list-item {
+  background-color: transparent;
+}
+
 .cmp-method-list .method-list-item label {
   background: #000000;
   border-radius: 0;
