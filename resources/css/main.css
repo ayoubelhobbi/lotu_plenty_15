@@ -272,11 +272,13 @@ body > #vue-app, body > #vue-error {
 
 .cmp-product-thumb .add-to-basket-lg-container {
   border-color: transparent #ffce00 transparent transparent;
+  color: #222222;
 }
 
 .cmp-product-thumb .add-to-basket-lg-container:hover {
 
   border-color: transparent #ffce00 transparent transparent;
+  opacity: 0.8 !important;
 }
 
 .parallax-img-container .parallax-text-container h1 {
