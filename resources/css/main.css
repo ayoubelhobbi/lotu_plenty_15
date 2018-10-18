@@ -182,6 +182,16 @@ body > #vue-app, body > #vue-error {
 
 }
 
+.owl-theme .owl-nav [class*='owl-'] {
+  background: transparent;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: none;
+  color: #ffce00;
+  text-decoration: none;
+}
+
 .cmp-method-list .method-list-item > input:disabled ~ label {
   opacity: 1;
 }
@@ -756,7 +766,6 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   background-color: #222222;
   color: #fff;
   padding: 2rem;
-  border: 1px solid #ffce00;
 }
 
 
