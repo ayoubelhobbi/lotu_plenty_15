@@ -1420,10 +1420,6 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse > li a
   background-color: transparent;
 }
 
-.cmp-product-thumb .thumb-title, .cmp-product-thumb .price {
-  color: #222222;
-}
-
 span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, span.vat.small.text-muted {
   border-top: none;
 }
