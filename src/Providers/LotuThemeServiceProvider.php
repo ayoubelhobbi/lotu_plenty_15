@@ -65,7 +65,7 @@ class LotuThemeServiceProvider extends ServiceProvider
       ]);
     }, 0);
 
-    $dispatcher->listen('IO.tpl.category.item', function(TemplateContainer $container)
+    $dispatcher->listen('IO.tpl.category.content', function(TemplateContainer $container)
 				{
 					$container->setTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
 					return false;
