@@ -192,6 +192,10 @@ body > #vue-app, body > #vue-error {
   text-decoration: none;
 }
 
+.cmp-product-thumb .add-to-basket-lg-container:hover > i {
+  color: #222222;
+}
+
 .cmp-method-list .method-list-item > input:disabled ~ label {
   opacity: 1;
 }
