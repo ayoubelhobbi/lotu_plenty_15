@@ -190,6 +190,7 @@ body > #vue-app, body > #vue-error {
   background: none;
   color: #ffce00;
   text-decoration: none;
+  opacity: 0.8;
 }
 
 .cmp-product-thumb .add-to-basket-lg-container:hover > i {
