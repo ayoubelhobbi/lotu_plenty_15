@@ -193,6 +193,10 @@ body > #vue-app, body > #vue-error {
   opacity: 0.8;
 }
 
+.artikelnummerCategory {
+  margin-top: 0.5rem;
+}
+
 .cmp-product-thumb .add-to-basket-lg-container:hover > i {
   color: #222222;
 }
