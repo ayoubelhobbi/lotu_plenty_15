@@ -690,7 +690,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 
 .widget-image-carousel.widget-primary .widget-caption h2, .widget-image-carousel.widget-primary .widget-caption .h2 {
 
-  color: #000;
+  color: #fff;
   background-color: transparent;
   width: 36rem;
   position: relative;
@@ -1164,7 +1164,7 @@ button.btn.btn-block.btn-default {
 }
 
 .wrapper-main #page-body {
-    margin-top: 20px;
+    margin-top: 15px;
     background: transparent;
 }
 
