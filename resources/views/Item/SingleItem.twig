@@ -3,6 +3,8 @@
 {% set shippingCat = config("Ceres.global.shippingCostsCategoryId") %}
 {% set contactClass = services.customer.getContactClassId() %}
 
+<script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+
 <script type="x/template" id="vue-single-item">
     <div>
         <div class="single container-max page-content">
@@ -416,7 +418,7 @@
     </div>
 </script>
 
-<script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+
 
 <script>
     tippy(document.querySelector('.montageartbeispiel'));
