@@ -1497,9 +1497,9 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 
 @media (min-width: 768px){
 .single .nav-tabs .nav-item .nav-link.active, .single .nav-tabs .nav-item .nav-link:hover {
-    border: 1px solid #ffce00;
-    color: #ffffff;
-    background: #222222;
+  border: none;
+  color: #222222;
+  background: #ffffff;
 }
 }
 
