@@ -202,7 +202,7 @@
                         <h3>Tooltip Example</h3>
                             <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
 
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 8">
+                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 8" data-toggle="tooltip" title="Hooray!">
                               <span v-if="property.selection.name == 'Schrauben'">
                                 <img src="https://www.lotu.de/images/gallery/icons/schrauben.png">
                               </span>
@@ -211,7 +211,7 @@
                               </span>
                           </span>
 
-                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 7">
+                          <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 7" data-toggle="tooltip" title="Hooray!">
                               <span v-if="property.selection.name == 'Kleben'">
                                 <img src="https://www.lotu.de/images/gallery/icons/kleben.png">
                               </span>
