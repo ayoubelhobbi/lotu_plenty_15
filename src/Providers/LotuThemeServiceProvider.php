@@ -71,6 +71,12 @@ class LotuThemeServiceProvider extends ServiceProvider
 					return false;
 				}, 0);
 
+    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+    if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.ItemImageCarousel')
+    {
+       $container->setNewComponentTemplate('LotuTheme::Item.Components.ItemImageCarousel');
+    }
+     }, self::PRIORITY);
 
     }
 }
