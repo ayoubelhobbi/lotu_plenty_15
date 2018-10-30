@@ -31,7 +31,7 @@ class LotuThemeServiceProvider extends ServiceProvider
 
     public function boot(Dispatcher $dispatcher)
     {
-
+          /* Skripte einbinden  */
       $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
        {
            $container->addScriptTemplate('LotuTheme::ThemeScript');
@@ -59,6 +59,7 @@ class LotuThemeServiceProvider extends ServiceProvider
       ]);
      }, 0);
 
+          /* KategorieAnsicht bei Auswahl der Navigation überschreiben -   */
      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.CategoryItem')
      {
