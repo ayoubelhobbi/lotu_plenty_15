@@ -1,7 +1,7 @@
 <?php
 
 /**
-* @author: Ayoub El Hobbi 
+* @author: Ayoub El Hobbi
 */
 
 namespace LotuTheme\Providers;
@@ -37,11 +37,13 @@ class LotuThemeServiceProvider extends ServiceProvider
            $container->addScriptTemplate('LotuTheme::ThemeScript');
        }, self::PRIORITY);
 
+          /* Footer überschreiben  */
       $dispatcher->listen('IO.init.templates', function(Partial $partial)
 			 {
 					$partial->set('footer', 'LotuTheme::ThemeFooter');
 			 }, 0);
 
+          /* SingleItem überschreiben */
        $dispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
 			 {
 					 if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
@@ -50,6 +52,7 @@ class LotuThemeServiceProvider extends ServiceProvider
 					 }
 			 }, self::PRIORITY);
 
+          /* ResultFields SingleItemWrapper überschreiben  */
        $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
           ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'LotuTheme::ResultFields.SingleItemWrapper'
