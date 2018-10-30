@@ -23,15 +23,7 @@
         </div>
         <h3>Videos</h3>
         <div id="thumb-carousel" class="owl-thumbs owl-carousel owl-theme owl-single-item" ref="thumbs">
-            <img
-                @click="goTo(index)"
-                class="owl-thumb"
-                v-bind:class="{ 'active': currentItem === index }"
-                :src="imagePreview.url"
-                :alt="getAltText(imagePreview)"
-                :title="getItemName()"
-                v-for="(imagePreview, index) in carouselImages"
-            >
+            <img src="https://www.lotu.de/images/gallery/icons/kajak.png">
         </div>
     </div>
 </script>
