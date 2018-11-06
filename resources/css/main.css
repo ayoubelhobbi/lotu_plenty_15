@@ -388,6 +388,7 @@ body > #vue-app, body > #vue-error {
 .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
   background-color: transparent;
   border-color: transparent;
+  color: #ffce00;
 }
 
 .page-item.disabled .page-link, .page-item.disabled .page-link:focus, .page-item.disabled .page-link:hover{
@@ -1427,6 +1428,10 @@ body > #vue-app.open-right .wrapper-right, body > #vue-error.open-right .wrapper
 nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse > li.level1 > a {
     color: #ffce00;
     font-weight: bold;
+}
+
+nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse > li.level1 {
+  padding: 1em 1em;
 }
 }
 
