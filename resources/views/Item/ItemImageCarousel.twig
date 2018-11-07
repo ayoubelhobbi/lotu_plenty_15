@@ -22,25 +22,12 @@
             >
         </div>
         <h2>Videos</h2>
-          
+
             <div class="youtubeVideo">
               <div class="videoWrapper1">
-              <iframe v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25" width="100%" height="150" v-bind:src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25" width="100%" height="100" v-bind:src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
             </div>
-
-
-
-
-        <img id="myImg" src="https://www.w3schools.com/howto/img_snow.jpg" alt="Snow" style="width:100%;max-width:150px"><br/><br/>
-
-          <a id="video1" video-url="https://www.youtube.com/watch?v=0wCC3aLXdOw">
-        Youtube
-          </a>
-          <a id="video2" video-url="https://vimeo.com/229490822">
-          Vimeo
-          </a>
-
-        <button href="https://github.com/appleple/modal-video" class="btn btn-red js-video-btn" data-video-id="7TUOI23spt0">Open Video</button>
 
 
 
