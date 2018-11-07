@@ -853,10 +853,11 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 button.btn.btn-block.btn-default {
-
-	color: #fff;
-  background-color: #008ebd;
-  border-color: #008ebd;
+  color: #000;
+  background-color: #ffce00;
+  border-color: #ffce00;
+  font-family: "akaChen", sans-serif;
+  border-radius: 1.4rem;
 }
 
 .fa-spinner:before {
