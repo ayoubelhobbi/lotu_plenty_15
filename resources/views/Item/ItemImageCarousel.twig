@@ -31,12 +31,16 @@
             </div>
 
             {%  for variationProperty in item.documents[0].data.variationProperties %}
-            	{% if variationProperty .property.id == 26 %}
+            	{% if variationProperty.property.id == 26 %}
                   {{ variationProperty.property.names.name }}
             	     {{ variationProperty.values.value }}
             	{% endif %}
             {% endfor %}
 
+
+            <ul>
+              <li></li>
+            </ul>
 
     </div>
 </script>
