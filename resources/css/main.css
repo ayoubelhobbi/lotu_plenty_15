@@ -1182,7 +1182,7 @@ button.btn.btn-block.btn-default {
 }
 
 .single .nav-tabs .nav-item .nav-link {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'akaChen', sans-serif !important;
 }
 
@@ -1502,7 +1502,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 @media (min-width: 768px) {
 .single .nav-tabs .nav-item .nav-link.active {
     font-family: 'akaChen', sans-serif !important;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 }
@@ -1511,8 +1511,8 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 @media (min-width: 768px){
 .single .nav-tabs .nav-item .nav-link.active, .single .nav-tabs .nav-item .nav-link:hover {
   border: none;
-  color: #222222;
-  background: #ffce00;
+  color: #222222 !important;
+  background: #fff;
 }
 }
 
