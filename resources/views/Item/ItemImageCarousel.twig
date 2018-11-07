@@ -30,9 +30,13 @@
               </div>
             </div>
 
-            <tr v-for="properties in currentVariation.variationProperties " v-if="properties.property.groups[0].names.name == 'Video'">
-              <td> ${ properties.property.groups[0].names.name }</td>
-              <td> ${ properties.property.names.name }</td>
-            </tr>
+            {%  for variationProperty in item.documents[0].data.variationProperties %}
+            	{% if variationProperty .property.id == 26 %}
+                  {{ variationProperty.property.names.name }}
+            	     {{ variationProperty.values.value }}
+            	{% endif %}
+            {% endfor %}
+
+
     </div>
 </script>
