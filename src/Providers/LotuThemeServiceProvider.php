@@ -59,7 +59,7 @@ class LotuThemeServiceProvider extends ServiceProvider
       ]);
      }, 0);
 
-          /* KategorieAnsicht bei Auswahl der Navigation überschreiben -   */
+          /* KategorieAnsicht bei Auswahl der Navigation überschreiben  */
      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.CategoryItem')
      {

@@ -10,7 +10,7 @@
         <div>
           <h4>Bilder</h4>
         </div>
-        <div id="thumb-carousel" class="owl-thumbs owl-carousel owl-theme owl-single-item" ref="thumbs">
+        <div id="thumb-carousel" class="owl-thumbs owl-carousel owl-theme owl-single-item" ref="thumbs" v-if="carouselImages > 1">
             <img
                 @click="goTo(index)"
                 class="owl-thumb"
@@ -26,10 +26,9 @@
             <div class="youtubeVideo">
               <div class="videoWrapper1">
                 <iframe v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25" width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <p v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">
-                ${ property.texts.value }
-                {{ property.texts.value }}
-                </p>
+                  <p v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">
+
+                  </p>
               </div>
             </div>
 
