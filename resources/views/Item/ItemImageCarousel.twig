@@ -7,10 +7,12 @@
                 </a>
             </div>
         </div>
-        <div>
-          <h4>Bilder</h4>
-        </div>
+
+        /* Wenn es nur ein Bild in der Galerie gibt, wird die Galerie gar nicht angezeigt */
         <div id="thumb-carousel" class="owl-thumbs owl-carousel owl-theme owl-single-item" ref="thumbs" v-if="carouselImages > 1">
+            <div>
+              <h4>Bilder</h4>
+            </div>
             <img
                 @click="goTo(index)"
                 class="owl-thumb"
@@ -26,11 +28,17 @@
             <div class="youtubeVideo">
               <div class="videoWrapper1">
                 <iframe v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25" width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  <p v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">
 
-                  </p>
               </div>
             </div>
 
+            <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11" data-toggle="tooltip" title="Schlauchboot">
+                <span v-if="property.selection.name == 'Schlauchboot'">
+                  <img src="https://www.lotu.de/images/gallery/icons/schlauchboot.png">
+                </span>
+                <span v-else-if="property.selection.name == null" class="opacityIcons">
+                  <img src="https://www.lotu.de/images/gallery/icons/schlauchboot1.png">
+                </span>
+            </span>
     </div>
 </script>
