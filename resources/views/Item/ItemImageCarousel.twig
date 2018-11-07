@@ -26,6 +26,9 @@
             <div class="youtubeVideo">
               <div class="videoWrapper1">
                 <iframe v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25" width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">
+                ${ property.texts.value }
+                </p>
               </div>
             </div>
 
