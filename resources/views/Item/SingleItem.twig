@@ -12,7 +12,23 @@
                         <div class="col-xs-12">
                             <item-image-carousel image-url-accessor="url" template="#vue-item-image-carousel"></item-image-carousel>
 
-                            
+
+                            <ul>
+                                <li v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25"><iframe width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+                                <li v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26"><iframe width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+                                <li v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26"><iframe width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+                                <li v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26"><iframe width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+                                <li v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26"><iframe width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+                                <li v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26"><iframe width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+                            </ul>
+
+
+
+                                <iframe v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25" width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                              </div>
+                            </div>
+
                             <div class="youtubeVideo">
                               <div class="videoWrapper1">
                                 <iframe v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25" width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
