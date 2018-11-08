@@ -12,26 +12,28 @@
                         <div class="col-xs-12">
                             <item-image-carousel image-url-accessor="url" template="#vue-item-image-carousel"></item-image-carousel>
 
+                            <div id="container">
+                              <center>
+                                <p>Open the lightbox with below button</p>
+                                <button id="playme" onclick="revealVideo('video','youtube')">Play Video</button>
+                              </center>
+                            </div>
 
-                            <ul>
-                                <li v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25"><iframe width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
-                                <li v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26"><iframe width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
-                                <li v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26"><iframe width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
-                            </ul>
+                            <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+                              <div class="lightbox-container">
+                                <div class="lightbox-content">
 
+                                  <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+                                    Close | ✕
+                                  </button>
+                                  <div class="video-container">
+                                    <iframe id="youtube" width="200" height="300" src="https://www.youtube.com/embed/WsptdUFthWI?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                  </div>
 
-
-                                <iframe v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25" width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                                </div>
                               </div>
                             </div>
 
-                            <div class="youtubeVideo">
-                              <div class="videoWrapper1">
-                                <iframe v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25" width="100%" height="100" :src="property.texts.value" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-                              </div>
-                            </div>
 
 
 
