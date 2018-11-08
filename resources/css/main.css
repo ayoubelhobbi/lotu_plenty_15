@@ -1532,7 +1532,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 .filter-category .card .form-check .form-check-input:checked+label::before { display: none !important; }
 
 
-.lightbox {
+.lightboxVideo {
   background-color: rgba(0, 0, 0, 0.8);
   overflow: scroll;
   position: fixed;
@@ -1543,7 +1543,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
   left: 0;
   top: 0;
 }
-.lightbox-container {
+.lightbox-containerVideo {
   position: relative;
   max-width: 960px;
   margin: 7% auto;
@@ -1553,16 +1553,16 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
   z-index: 10;
 }
 @media screen and (max-width: 768px) {
-  .lightbox-container {
+  .lightbox-containerVideo {
     margin-top: 10%;
   }
 }
 @media screen and (max-width: 414px) {
-  .lightbox-container {
+  .lightbox-containerVideo {
     margin-top: 13%;
   }
 }
-.lightbox-content {
+.lightbox-contentVideo {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
 }
 .lightbox-close {
