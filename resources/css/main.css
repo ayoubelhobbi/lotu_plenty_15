@@ -1604,15 +1604,15 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
   border-radius: 4px;
   max-width: 300px;
   height: auto;
-  padding: 1rem;
+  padding-right: 1.5rem;
 }
 #playme {
-  background: #007fed;
+  background: #222222;
   text-transform: uppercase;
   font-weight: 300;
-  border: none;
-  color: white;
-  padding: 10px 15px;
+  border: 1px solid;
+  color: #ffce00;
+  padding: 28px 42px;
   display: inline-block;
   font-size: 14px;
   margin: 0;
