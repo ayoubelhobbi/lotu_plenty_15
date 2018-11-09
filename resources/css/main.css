@@ -847,7 +847,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 
 .videoGallerySingle {
   display: inline-block;
-  
+
 }
 
 
@@ -1604,9 +1604,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
   border-radius: 4px;
   max-width: 300px;
   height: auto;
-  padding: 50px;
-  background: #222222;
-  margin: 100px auto;
+  padding: 1rem;
 }
 #playme {
   background: #007fed;
