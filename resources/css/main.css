@@ -845,6 +845,10 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 	width: 100%;
 }
 
+.ueberschriftGallerie {
+  padding: 1rem;
+}
+
 .videoGallerySingle a{
   float: left;
   padding: 3rem 4.6rem;
