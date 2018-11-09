@@ -36,6 +36,19 @@
                                 </div>
                             </div>
 
+
+
+
+                            <a href="https://farm9.staticflickr.com/8642/16455005578_0fdfc6c3da_b.jpg" data-lity data-lity-desc="Photo of a flower">Image</a>
+                            <a href="#inline" data-lity>Inline</a>
+                            <a href="//www.youtube.com/watch?v=XSGBVzeBUbk" data-lity>iFrame Youtube</a>
+                            <a href="//vimeo.com/1084537" data-lity>iFrame Vimeo</a>
+                            <a href="//maps.google.com/maps?q=1600+Amphitheatre+Parkway,+Mountain+View,+CA" data-lity>Google Maps</a>
+
+                            <div id="inline" style="background:#fff" class="lity-hide">
+                            Inline content
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -314,7 +327,7 @@
                     <div class="tab-content">
                         {% if 'item.description' in itemData or 'all' in itemData %}
                             <div class="tab-pane active" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
-                              
+
                             </div>
 
                             <div class="m-y-2" v-html="currentVariation.texts.description"></div>
