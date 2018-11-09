@@ -14,40 +14,16 @@
 
                             <h4>Videos</h4>
                             <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10" class="videoGallerySingle">
-                                <div id="containerVideo">
-                                  <center>
-                                    <button id="playme" onclick="revealVideo('video','youtube')">${ property.property.names.name }</button>
-                                  </center>
-                                </div>
+                                <a v-bind:href="property.texts.value"  data-lity>iFrame Youtube</a>
 
-                                <div id="video" class="lightboxVideo" onclick="hideVideo('video','youtube')">
-                                  <div class="lightbox-containerVideo">
-                                    <div class="lightbox-contentVideo">
-
-                                      <button onclick="hideVideo('video','youtube')" class="lightbox-close">
-                                        Close | ✕
-                                      </button>
-                                      <div class="video-container">
-                                        <iframe id="youtube" width="100%" height="355" :src="property.texts.value" frameborder="0" allowfullscreen></iframe>
-                                      </div>
-
-                                    </div>
-                                  </div>
+                                <div id="inline" style="background:#fff" class="lity-hide">
+                                Inline content
                                 </div>
                             </div>
 
 
 
 
-                            <a href="https://farm9.staticflickr.com/8642/16455005578_0fdfc6c3da_b.jpg" data-lity data-lity-desc="Photo of a flower">Image</a>
-                            <a href="#inline" data-lity>Inline</a>
-                            <a href="//www.youtube.com/watch?v=XSGBVzeBUbk" data-lity>iFrame Youtube</a>
-                            <a href="//vimeo.com/1084537" data-lity>iFrame Vimeo</a>
-                            <a href="//maps.google.com/maps?q=1600+Amphitheatre+Parkway,+Mountain+View,+CA" data-lity>Google Maps</a>
-
-                            <div id="inline" style="background:#fff" class="lity-hide">
-                            Inline content
-                            </div>
 
                         </div>
                     </div>
