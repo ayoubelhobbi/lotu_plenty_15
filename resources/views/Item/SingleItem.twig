@@ -14,7 +14,7 @@
 
                             <h4>Videos</h4>
                             <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10" class="videoGallerySingle">
-                                <a v-bind:href="property.texts.value"  data-lity><img src="https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/video_gallery/youtube.png">${property.property.names.name}</a>
+                                <a v-bind:href="property.texts.value"  data-lity>${property.property.names.name}</a>
 
                                 <div id="inline" style="background:#fff" class="lity-hide">
                                 Inline content
