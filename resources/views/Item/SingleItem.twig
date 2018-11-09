@@ -12,7 +12,7 @@
                         <div class="col-xs-12">
                             <item-image-carousel image-url-accessor="url" template="#vue-item-image-carousel"></item-image-carousel>
 
-
+                            <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10">
                               <div id="containerVideo">
                                 <center>
                                   <p>Open the lightbox with below button</p>
@@ -28,13 +28,13 @@
                                       Close | ✕
                                     </button>
                                     <div class="video-container">
-                                      <iframe id="youtube" width="100%" height="355" :src="https://www.youtube.com/embed/cHiKNKUXwrY" frameborder="0" allowfullscreen></iframe>
+                                      <iframe id="youtube" width="100%" height="355" :src="property.texts.value" frameborder="0" allowfullscreen></iframe>
                                     </div>
 
                                   </div>
                                 </div>
                               </div>
-                          
+                            </div>
 
 
 
