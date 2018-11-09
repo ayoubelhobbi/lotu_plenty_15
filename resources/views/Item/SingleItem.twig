@@ -20,10 +20,6 @@
                                 </div>
                             </div>
 
-
-
-
-
                         </div>
                     </div>
                 </div>
@@ -303,7 +299,7 @@
                         {% if 'item.description' in itemData or 'all' in itemData %}
                             <div class="tab-pane active" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
 
-                            </div>
+
 
                             <div class="m-y-2" v-html="currentVariation.texts.description"></div>
                           </div>
