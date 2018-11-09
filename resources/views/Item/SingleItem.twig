@@ -13,7 +13,7 @@
                             <item-image-carousel image-url-accessor="url" template="#vue-item-image-carousel"></item-image-carousel>
 
                             <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10" class="videoGallerySingle" >
-                                <a v-bind:href="property.texts.value"  data-lity data-toggle="tooltip" title="property.property.names.name"></a>
+                                <a v-bind:href="property.texts.value"  data-lity data-toggle="tooltip" :title="property.property.names.name"></a>
 
                                 <div id="inline" style="background:#fff" class="lity-hide">
                                 Inline content
