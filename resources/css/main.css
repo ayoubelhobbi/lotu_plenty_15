@@ -853,11 +853,12 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   background-color: #ffce00;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 1rem;
 
 }
 
 .videoGallerySingle a:hover {
-    opacity: 0.8 !important;
+    opacity: 0.8;
 }
 
 /*Das muss man noch überprüfen*/
