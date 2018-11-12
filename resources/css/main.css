@@ -872,6 +872,10 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
     padding: 2rem;
 }
 
+.SetInhaltUeberschrift {
+  float: right;
+}
+
 .videoGallerySingle a:hover {
     border: 1px solid #ffce00;
 }
