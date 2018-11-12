@@ -12,7 +12,7 @@
                         <div class="col-xs-12">
                             <item-image-carousel image-url-accessor="url" template="#vue-item-image-carousel"></item-image-carousel>
                             <div class="ueberschriftGallerie">
-                              <span v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10">Videos</span>
+                              <span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">Videos</span>
                             </div>
                             <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10" class="videoGallerySingle" >
                                 <a v-bind:href="property.texts.value" data-lity></a>
