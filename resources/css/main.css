@@ -272,7 +272,7 @@ body > #vue-app, body > #vue-error {
 }
 
 .iconsSingleItem h4 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -948,7 +948,7 @@ button.btn.btn-block.btn-default {
 }
 
 .iconsImages img {
-  width: 5rem;
+  width: 4.5rem;
   margin-right: 0.1rem;
   margin-left: 0.4rem;
 }
@@ -1534,6 +1534,14 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
   border: none;
   color: #222222 !important;
   background: #fff;
+}
+}
+
+@media (max-width: 544px){
+.videoGallerySingle a {
+  padding: 1.5rem 2.2rem;
+  margin-right: 0.6rem;
+  background-size: 5rem;
 }
 }
 
