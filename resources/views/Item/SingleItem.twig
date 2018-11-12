@@ -66,7 +66,7 @@
 
                     <!-- Item Bundle -->
 
-                        <a class="SetInhaltUeberschrift" href="#SetInhalt" data-lity v-if="bundleType === 'bundle'">Set Inhalt</a>
+                        <a class="SetInhaltUeberschrift" href="#SetInhalt" data-lity v-if="currentVariation.variation.bundleType">Set Inhalt</a>
 
                         <div id="SetInhalt" style="background:#fff" class="lity-hide">
                           <item-bundle :bundle-type="currentVariation.variation.bundleType" :bundle-components="currentVariation.bundleComponents"></item-bundle>
