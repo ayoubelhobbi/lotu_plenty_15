@@ -1483,7 +1483,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .owl-thumbs .owl-thumb {
-	height: 3.3rem;
+	height: auto;
 }
 
 }
