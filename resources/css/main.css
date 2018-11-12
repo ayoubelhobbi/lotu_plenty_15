@@ -850,6 +850,10 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   padding: 1rem 0rem
 }
 
+.ueberschriftGallerie span {
+  font-family: "akaChen", sans-serif;
+}
+
 .videoGallerySingle a{
   float: left;
   padding: 3rem 4.6rem;
