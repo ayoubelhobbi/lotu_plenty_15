@@ -1311,6 +1311,11 @@ a.nav-link.active:hover, a.nav-link:hover {
     color: #ffffff;
     line-height: 1.5rem;
 }
+
+.custom-select {
+  background-position-x: 94%;
+}
+
 }
 
 @media (max-width: 544px) {
