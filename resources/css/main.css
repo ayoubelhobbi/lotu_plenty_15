@@ -28,6 +28,11 @@ a:hover {
   color: #ffce00 !important;
 }
 
+a:focus {
+  color: #ffce00;
+  opacity: 0.8;
+}
+
 * {
 	font-family: 'Lato', sans-serif;
 }
