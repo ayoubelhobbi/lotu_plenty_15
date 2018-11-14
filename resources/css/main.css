@@ -60,7 +60,7 @@ body {
   }
 
   .mehrwertsteuer {
-    font-size: 36 !important;
+    font-size: 36% !important;
     font-family: 'Lato', sans-serif !important;
     border-top: none !important;
   }
