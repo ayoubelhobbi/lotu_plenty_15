@@ -47,6 +47,10 @@ body {
   background-image: url(https://www.lotu.de/images/hintergrund.png);
 }
 
+.tag {
+  padding: 0 0;
+}
+
 .footer .footer-features {
 
   background-color: #008ebd;
