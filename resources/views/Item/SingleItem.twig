@@ -65,13 +65,14 @@
                     <!-- /Variation -->
 
                     <!-- Item Bundle -->
-
-                        <a class="SetInhaltUeberschrift" href="#SetInhalt" data-lity v-if="currentVariation.variation.bundleType === 'bundle'" data-toggle="tooltip" title="Dieser Artikel besteht aus mehreren Produkten">Set Inhalt</a>
+                      <!--
+                      <a class="SetInhaltUeberschrift" href="#SetInhalt" data-lity v-if="currentVariation.variation.bundleType === 'bundle'" data-toggle="tooltip" title="Dieser Artikel besteht aus mehreren Produkten">Set Inhalt</a>
 
                         <div id="SetInhalt" style="background:#fff" class="lity-hide">
                           <item-bundle :bundle-type="currentVariation.variation.bundleType" :bundle-components="currentVariation.bundleComponents"></item-bundle>
                         </div>
-
+                        -->
+                        <item-bundle :bundle-type="currentVariation.variation.bundleType" :bundle-components="currentVariation.bundleComponents"></item-bundle>
                     <!-- /Item Bundle -->
 
                     <slot name="BeforePrice"></slot>
@@ -105,7 +106,7 @@
                         * {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
                         <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.singleItemShippingCosts") }}">{{ trans("Ceres::Template.singleItemShippingCosts") }}</a>
                     </span>
-                    
+
                     <div class="base-price text-muted m-y-1" v-if="currentVariation.unit">
                         <div>
                             {{ trans("Ceres::Template.singleItemContent") }}
