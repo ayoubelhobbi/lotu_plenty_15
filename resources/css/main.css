@@ -1253,6 +1253,19 @@ button.btn.btn-block.btn-default {
     margin-bottom: 1rem !important;
 }
 
+@media (min-width: 900px){
+  .home_icons {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 544px){
+  .home_icons {
+    padding-left: 4rem;
+  }
+}
+
+
 
 @media (min-width: 768px){
 .wrapper-main .breadcrumbs {
