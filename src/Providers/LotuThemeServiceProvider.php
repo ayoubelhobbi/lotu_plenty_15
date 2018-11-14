@@ -59,7 +59,7 @@ class LotuThemeServiceProvider extends ServiceProvider
       ]);
      }, 0);
 
-          /* Kategorieansicht bei Auswahl der Navigation überschreiben  */
+          /* KategorieAnsicht bei Auswahl der Navigation überschreiben  */
      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.CategoryItem')
      {
@@ -67,12 +67,6 @@ class LotuThemeServiceProvider extends ServiceProvider
      }
       }, self::PRIORITY);
 
-          /* Kategorieansicht  */
-  $dispatcher->listen('IO.tpl.category.item', function(TemplateContainer $container)
-      {
-        $container->setTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
-
-      }, self::PRIORITY);
 
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
@@ -80,6 +74,13 @@ class LotuThemeServiceProvider extends ServiceProvider
           ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'LotuTheme::ResultFields.ListItem'
       ]);
     }, 0);
+
+        /* Testing */
+    $dispatcher->listen('IO.tpl.category.content', function(TemplateContainer $container)
+				{
+					$container->setTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
+					return false;
+				}, 0);
 
         /* Überschreiben der ItemImageCarousel */
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
