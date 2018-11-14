@@ -1324,6 +1324,12 @@ a.nav-link.active:hover, a.nav-link:hover {
 }
 }
 
+@media (max-width: 991px){
+.cmp-product-thumb .thumb-image {
+    height: 225px;
+}
+}
+
 @media (max-width: 991px) {
 .cmp-product-thumb .thumb-title, .cmp-product-thumb .price {
     color: #ffffff;
