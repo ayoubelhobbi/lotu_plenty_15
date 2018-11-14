@@ -60,9 +60,9 @@ body {
   }
 
   .mehrwertsteuer {
-    font-size: 36%;
+    font-size: 36 !important;
     font-family: 'Lato', sans-serif !important;
-    border-top: none;
+    border-top: none !important;
   }
 
 /* CSS für den neuen Footer */
