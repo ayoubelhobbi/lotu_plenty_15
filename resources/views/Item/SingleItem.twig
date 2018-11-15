@@ -104,10 +104,12 @@
                             <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.singleItemShippingCosts") }}">{{ trans("Ceres::Template.singleItemShippingCosts") }}</a>
                         </div>
 
-                        <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
-                            <span>
-                                ${ currentVariation.variation.availability.names.name }
-                            </span>
+
+                    </span>
+
+                    <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
+                        <span>
+                            ${ currentVariation.variation.availability.names.name }
                         </span>
                     </span>
 
