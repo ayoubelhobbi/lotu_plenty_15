@@ -103,13 +103,13 @@
                           {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
                             <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.singleItemShippingCosts") }}">{{ trans("Ceres::Template.singleItemShippingCosts") }}</a>
 
-                            <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
+                        </div>
+
+                        <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
                                 <div class="verfuegbarkeit">
                                     ${ currentVariation.variation.availability.names.name }
                                 </div>
                             </span>
-
-                        </div>
 
 
                     </span>
@@ -165,6 +165,7 @@
 
                           <h4>Dieser Artikel passt zu diesen Booten</h4>
 
+                          <a href="#Schlauchboot" data-lity>
                           <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 11" data-toggle="tooltip" title="Schlauchboot">
                               <span v-if="property.selection.name == 'Schlauchboot'">
                                 <img src="https://www.lotu.de/images/gallery/icons/schlauchboot.png">
@@ -172,7 +173,11 @@
                               <span v-else-if="property.selection.name == null" class="opacityIcons">
                                 <img src="https://www.lotu.de/images/gallery/icons/schlauchboot1.png">
                               </span>
-                          </span>
+                          </span></a>
+
+                            <div id="#Schlauchboot" class="lity-hide">
+                              <p>Bengar SChlauchboote</p>
+                            </div>
 
                           <span class="iconsImages" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 15" data-toggle="tooltip" title="Aluminium Boot">
                               <span v-if="property.selection.name == 'Aluminium Boot'">
