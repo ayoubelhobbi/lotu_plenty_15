@@ -30,8 +30,7 @@ class LotuThemeServiceProvider extends ServiceProvider
     }
 
     public function boot(Dispatcher $dispatcher)
-
-
+    {
           /* Skripte einbinden  */
       $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
        {
