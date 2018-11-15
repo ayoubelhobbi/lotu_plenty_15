@@ -49,7 +49,11 @@ body {
 
 .tag {
   padding: 0 0;
+}
+
+.verfuegbarkeit {
   font-size: 0.8rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .footer .footer-features {
