@@ -102,15 +102,16 @@
                         <div class="vat small text-muted mehrwertsteuer">
                           {% if services.customer.showNetPrices() %}{{ trans("Ceres::Template.singleItemExclVAT") }}{% else %}{{ trans("Ceres::Template.singleItemInclVAT") }}{% endif %} {{ trans("Ceres::Template.singleItemExclusive") }}
                             <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.singleItemShippingCosts") }}">{{ trans("Ceres::Template.singleItemShippingCosts") }}</a>
+
+                            <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
+                                <span>
+                                    ${ currentVariation.variation.availability.names.name }
+                                </span>
+                            </span>
+                            
                         </div>
 
 
-                    </span>
-
-                    <span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
-                        <span>
-                            ${ currentVariation.variation.availability.names.name }
-                        </span>
                     </span>
 
 
