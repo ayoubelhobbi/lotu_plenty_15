@@ -74,7 +74,7 @@ class LotuThemeServiceProvider extends ServiceProvider
      {
         $container->setNewComponentTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
      }
-      }, self::PRIORITY;
+   }, self::PRIORITY);
 
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
