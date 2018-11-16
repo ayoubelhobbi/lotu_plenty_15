@@ -74,13 +74,7 @@ class LotuThemeServiceProvider extends ServiceProvider
           ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'LotuTheme::ResultFields.ListItem'
       ]);
     }, 0);
-
-        /* Testing */
-    $dispatcher->listen('IO.tpl.category.content', function(TemplateContainer $container)
-				{
-					$container->setTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
-					return false;
-				}, 0);
+    
 
         /* Überschreiben der ItemImageCarousel */
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
