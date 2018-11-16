@@ -94,6 +94,8 @@
             <a href="{{ itemUrl }}" class="thumb-title small">
                 {{ ItemName.get(item.data | itemName, item.data.variation.bundleType) }}
             </a>
+
+            <p class="articlenumber small text-muted artikelnummerCategory">Art.-Nr.: {{ itemData.variation.number }}</p>
             <div class="thumb-meta">
                 {{ LayoutContainer.show("Ceres::CategoryItem.BeforePrices", item.data) }}
 
