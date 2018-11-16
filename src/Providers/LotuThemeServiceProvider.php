@@ -70,10 +70,7 @@ class LotuThemeServiceProvider extends ServiceProvider
 
       /* KategorieAnsicht bei Standard Kategorie */
       $dispatcher->listen('IO.tpl.category.item', function(ComponentContainer $container){
-     if( $container->getOriginComponentTemplate() == 'Ceres::Category.Item.Partials.CategoryListItem')
-     {
-        $container->setNewComponentTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
-     }
+          $container->setTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
    }, self::PRIORITY);
 
         /* ListItem JSON überschreiben */
