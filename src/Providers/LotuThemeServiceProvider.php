@@ -68,13 +68,20 @@ class LotuThemeServiceProvider extends ServiceProvider
       }, self::PRIORITY);
 
 
+      /* KategorieAnsicht bei Standard Kategorie */
+      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+     if( $container->getOriginComponentTemplate() == 'Ceres::Category.Item.Partials.CategoryListItem')
+     {
+        $container->setNewComponentTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
+     }
+      }, self::PRIORITY;
+
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
           ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'LotuTheme::ResultFields.ListItem'
       ]);
     }, 0);
-    
 
         /* Überschreiben der ItemImageCarousel */
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
