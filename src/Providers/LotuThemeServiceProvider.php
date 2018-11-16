@@ -69,7 +69,7 @@ class LotuThemeServiceProvider extends ServiceProvider
 
 
       /* KategorieAnsicht bei Standard Kategorie */
-      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+      $dispatcher->listen('IO.tpl.category.item', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::Category.Item.Partials.CategoryListItem')
      {
         $container->setNewComponentTemplate('LotuTheme::Category.Item.Partials.CategoryListItem');
