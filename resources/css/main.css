@@ -1491,7 +1491,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse > li.l
 }
 
 nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse > li.level1 {
-  padding: 1em 1em;
+  padding: 0.5em 1em;
 }
 }
 
