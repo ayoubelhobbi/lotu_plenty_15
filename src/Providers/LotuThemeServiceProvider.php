@@ -69,7 +69,7 @@ class LotuThemeServiceProvider extends ServiceProvider
 
 
       /* KategorieAnsicht bei Standard Kategorie */
-  
+
 
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
@@ -80,11 +80,20 @@ class LotuThemeServiceProvider extends ServiceProvider
 
         /* Überschreiben der ItemImageCarousel */
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
-    if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.ItemImageCarousel')
+    if( $container->getOriginComponentTemplate() == 'Ceres::Ceres::Item.Components.ItemImageCarousel')
     {
        $container->setNewComponentTemplate('LotuTheme::Item.ItemImageCarousel');
     }
      }, self::PRIORITY);
+
+     /* Überschreiben der ShippingProfileSelect */
+   $dispatcher->listen('tpl.checkout', function(ComponentContainer $container){
+   if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.ShippingProfileSelect')
+   {
+      $container->setNewComponentTemplate('LotuTheme::Checkout.Components.ShippingProfileSelect');
+   }
+    }, self::PRIORITY);
+
 
     }
 }
