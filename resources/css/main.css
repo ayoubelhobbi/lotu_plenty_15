@@ -51,6 +51,20 @@ body {
   padding: 0 0;
 }
 
+.cmp-method-list.list .icon {
+  width: 6rem;
+  height: 4rem;
+}
+
+.cmp-method-list.list .content {
+  width: calc(88% - 4rem);
+  padding-left: 1.5rem;
+}
+
+.center-xy {
+  display: inline-block;
+}
+
 .verfuegbarkeit {
   font-size: 0.8rem;
   font-family: 'Lato', sans-serif;
