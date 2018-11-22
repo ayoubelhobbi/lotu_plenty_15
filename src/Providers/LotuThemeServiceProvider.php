@@ -88,7 +88,7 @@ class LotuThemeServiceProvider extends ServiceProvider
 
      /* Überschreiben der ShippingProfileSelect */
    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
-   if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.ShippingProfileSelect')
+   if( $container->getOriginComponentTemplate() == 'Ceres::Checkout.Components.ShippingProfileSelect')
    {
       $container->setNewComponentTemplate('LotuTheme::Checkout.Components.ShippingProfileSelect');
    }
