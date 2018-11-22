@@ -331,7 +331,7 @@ body > #vue-app, body > #vue-error {
 }
 
 .top-bar .controls-list .control-user #login-change > .dropdown .dropdown-menu a:hover {
-  background: transparent;
+  background: #222222;
 }
 
 .cmp-product-thumb .add-to-basket-lg-container {
