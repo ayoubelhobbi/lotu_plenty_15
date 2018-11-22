@@ -330,6 +330,10 @@ body > #vue-app, body > #vue-error {
   background-color: transparent;
 }
 
+.top-bar .controls-list .control-user #login-change > .dropdown .dropdown-menu a:hover {
+  background: transparent;
+}
+
 .cmp-product-thumb .add-to-basket-lg-container {
   border-color: transparent #ffce00 transparent transparent;
   color: #222222;
