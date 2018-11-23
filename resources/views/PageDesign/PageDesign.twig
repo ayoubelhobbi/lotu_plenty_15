@@ -1,9 +1,3 @@
-{% include getPartial('footer') %}
-
-{% for scriptTemplate in get_additional_scripts() %}
-    {% include scriptTemplate.path ignore missing with scriptTemplate.params %}
-{% endfor %}
-
 {% import "Ceres::PageDesign.Macros.IncludeComponents" as Loader %}
 {% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
 {% import "Ceres::PageDesign.Macros.Translations" as Translations %}
