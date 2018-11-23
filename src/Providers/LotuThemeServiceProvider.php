@@ -95,5 +95,13 @@ class LotuThemeServiceProvider extends ServiceProvider
     }, self::PRIORITY);
 
 
+      /* Überschreiben der CategoryItem  */
+    $dispatcher->listen('IO.tpl.category.item', function(TemplateContainer $container){
+
+       $container->setTemplate('LotuTheme::Category.Item.CategoryItem');
+
+     }, self::PRIORITY);
+
+
     }
 }
