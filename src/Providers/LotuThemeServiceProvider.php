@@ -68,10 +68,6 @@ class LotuThemeServiceProvider extends ServiceProvider
      }
       }, self::PRIORITY);
 
-
-      /* KategorieAnsicht bei Standard Kategorie */
-
-
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
