@@ -95,10 +95,6 @@
                 {{ ItemName.get(item.data | itemName, item.data.variation.bundleType) }}
             </a>
             <p class="articlenumber small text-muted artikelnummerCategory">Art.-Nr.: {{ item.data.variation.number }}</p>
-
-            <p>Swatch: {{ attributes.attribute.names.attributeId }}</p>
-            <p>Swatch2: {{ item.data.attributes.attribute.value.names.name }}</p>
-
             <div class="thumb-meta">
                 {{ LayoutContainer.show("Ceres::CategoryItem.BeforePrices", item.data) }}
 
