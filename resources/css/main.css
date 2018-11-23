@@ -144,6 +144,10 @@ body > #vue-app, body > #vue-error {
   background-color: transparent;
 }
 
+.cmp-product-thumb {
+  padding: 0;
+}
+
 .cmp-product-thumb .thumb-title, .cmp-product-thumb .price {
   color: #fff;
   font-size: 100%;
