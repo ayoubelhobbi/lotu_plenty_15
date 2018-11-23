@@ -54,6 +54,27 @@
                     ${ itemData | itemName }
                 </a>
                   <p class="articlenumber small text-muted artikelnummerCategory">Art.-Nr.: ${ itemData.variation.number }</p>
+
+                  <div class="farbenSwatches">
+
+
+                      <div class="col-xs-12 col-md-6 col-lg-4 variation-select" v-for="(attribute, attributeId) in attributes">
+                           <div class="input-unit" ref="labelBoxRef">
+                               <select class="custom-select text-gray-dark" v-model="selectedAttributes[attributeId]" @change="onSelectionChange(selectedAttributes[attributeId])">
+                                       <option :value="null">{{ trans("Ceres::Template.singleItemPleaseSelect") }}</option>
+                                       <option
+                                           v-for="(attributeValue, attributeValueId) in attribute.values"
+                                           :value="attributeValueId"
+                                           :disabled="!isEnabled(attributeId, attributeValueId)">
+                                           ${ attributeValue }
+                                       </option>
+                               </select>
+                               <label v-tooltip="isTextCut(attribute.name)" data-toggle="tooltip" data-placement="top" :title="attribute.name">${ attribute.name }</label>
+                           </div>
+                       </div>
+                    </div>
+
+
                 <div class="thumb-meta">
                     <div class="prices">
                         <div v-if="itemData.prices.rrp && itemData.prices.rrp.price.value > 0 && itemData.prices.rrp.price.value > itemData.prices.default.unitPrice.value" class="price-view-port">
@@ -82,24 +103,7 @@
                 </span>
 
 
-              <div class="farbenSwatches">
 
-
-                  <div class="col-xs-12 col-md-6 col-lg-4 variation-select" v-for="(attribute, attributeId) in attributes">
-                       <div class="input-unit" ref="labelBoxRef">
-                           <select class="custom-select text-gray-dark" v-model="selectedAttributes[attributeId]" @change="onSelectionChange(selectedAttributes[attributeId])">
-                                   <option :value="null">{{ trans("Ceres::Template.singleItemPleaseSelect") }}</option>
-                                   <option
-                                       v-for="(attributeValue, attributeValueId) in attribute.values"
-                                       :value="attributeValueId"
-                                       :disabled="!isEnabled(attributeId, attributeValueId)">
-                                       ${ attributeValue }
-                                   </option>
-                           </select>
-                           <label v-tooltip="isTextCut(attribute.name)" data-toggle="tooltip" data-placement="top" :title="attribute.name">${ attribute.name }</label>
-                       </div>
-                   </div>
-                </div>
 
 
 
