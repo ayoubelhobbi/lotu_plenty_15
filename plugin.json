@@ -2,7 +2,7 @@
     "version"           :   "0.0.1",
     "license"           :   "MIT",
     "name"              :   "LotuTheme",
-    "shortDescription"  :   { "de": "Ein Theme für Plentymarkets Version 15 ", "en": "TODO add manually" },
+    "shortDescription"  :   { "de": "Ein Theme für Plentymarkets Version 16 ", "en": "Lotu Theme for Ceres 16" },
     "namespace"         :   "LotuTheme",
     "author"            :   "Ayoub El Hobbi",
     "price"             :   0,
