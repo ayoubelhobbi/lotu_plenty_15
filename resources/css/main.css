@@ -712,7 +712,7 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 }
 
 span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, span.vat.small.text-muted {
-    background: #222222;
+    background: transparent;
 }
 
 .meta-container a {
