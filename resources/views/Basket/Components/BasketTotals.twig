@@ -86,7 +86,14 @@
                     --><dd :class="{ 'font-weight-bold': !showNetPrices }">
                         ${ basket.basketAmount | currency }
                     </dd>
-                    ${ totalVat.vatAmount | currency }
+                    <div class="vatTotals" v-for="totalVat in basket.totalVats">
+                        <dt>
+                            {{ trans("Ceres::Template.basketVAT") }} ${ totalVat.vatValue }%
+                        </dt><!--
+                        --><dd>
+                            ${ totalVat.vatAmount | currency }
+                        </dd>
+                    </div>
                     <template v-if="basket.couponCode && basket.couponCampaignType === 'sales'">
                         <dt>
                             {{ trans("Ceres::Template.basketCoupon") }}</strong>
