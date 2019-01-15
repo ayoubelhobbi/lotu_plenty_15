@@ -31,7 +31,7 @@
                 --><dd class="rebate-hint" v-else>
                         ${ calculateBaseValue(basket.itemSumNet, basket.basketRebate) - basket.itemSumNet | currency  }
                     </dd>
-                    
+
                     <dt :class="{ 'font-weight-bold': !showNetPrices }">
                         {{ trans("Ceres::Template.basketSubTotal") }} ({{ trans("Ceres::Template.basketGross") }})
                     </dt><!--
@@ -86,6 +86,7 @@
                     --><dd :class="{ 'font-weight-bold': !showNetPrices }">
                         ${ basket.basketAmount | currency }
                     </dd>
+                    ${ totalVat.vatAmount | currency }
                     <template v-if="basket.couponCode && basket.couponCampaignType === 'sales'">
                         <dt>
                             {{ trans("Ceres::Template.basketCoupon") }}</strong>
