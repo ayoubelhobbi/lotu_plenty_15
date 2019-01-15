@@ -92,6 +92,15 @@ class LotuThemeServiceProvider extends ServiceProvider
     }, self::PRIORITY);
 
 
+    /* Überschreiben der Summen im Checkout - Checkout Totals einmal anpassen und überall anfragen! */
+
+    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+     if( $container->getOriginComponentTemplate() == 'Ceres::Basket.Components.BasketTotals')
+     {
+        $container->setNewComponentTemplate('LotuTheme::Basket.Components.BasketTotals');
+     }
+      }, 0);
+
       /* Überschreiben der CategoryItem  */
     $dispatcher->listen('IO.tpl.category.item', function(TemplateContainer $container){
 
