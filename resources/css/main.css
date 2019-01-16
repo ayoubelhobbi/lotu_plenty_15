@@ -1067,6 +1067,10 @@ button.btn.btn-block.btn-default {
   border-bottom: none;
 }
 
+#mainNavbarCollapsable ul.mainmenu li {
+  float: none;
+}
+
 .white-popup-block {
     background: #FFF;
     padding: 20px 30px;
@@ -1397,6 +1401,10 @@ a.nav-link.active:hover, a.nav-link:hover {
 @media (min-width: 992px) {
 #single-carousel .owl-item img {
     height: auto;
+}
+
+nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li .level2 {
+  padding: 0;
 }
 }
 
