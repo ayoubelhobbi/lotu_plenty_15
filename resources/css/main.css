@@ -1050,6 +1050,10 @@ button.btn.btn-block.btn-default {
   color: #ffce00;
 }
 
+.telefonNummerFooter {
+  font-size: 2rem;
+}
+
 .btn-link:focus, .btn-link:hover {
   color: #ffce00;
 }
