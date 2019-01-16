@@ -99,7 +99,7 @@ class LotuThemeServiceProvider extends ServiceProvider
      {
         $container->setNewComponentTemplate('LotuTheme::Basket.Components.BasketTotals');
      }
-      }, PRIORITY);
+      }, self::PRIORITY);
 
       /* Überschreiben der CategoryItem  */
     $dispatcher->listen('IO.tpl.category.item', function(TemplateContainer $container){
