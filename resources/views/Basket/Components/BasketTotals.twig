@@ -53,7 +53,7 @@
                 </dd>
                 {{ LayoutContainer.show("Ceres::BasketTotals.AfterShippingCosts") }}
 
-                <hr>
+
 
                 {{ LayoutContainer.show("Ceres::BasketTotals.BeforeTotalSum") }}
 
@@ -68,18 +68,11 @@
 
 
                 {{ LayoutContainer.show("Ceres::BasketTotals.BeforeVat") }}
-                <div class="vatTotals" v-for="totalVat in basket.totalVats">
-                    <dt>
-                        {{ trans("Ceres::Template.basketVAT") }} ${ totalVat.vatValue }%
-                    </dt><!--
-                    --><dd>
-                        ${ totalVat.vatAmount | currency }
-                    </dd>
-                </div>
+                
                 {{ LayoutContainer.show("Ceres::BasketTotals.AfterVat") }}
 
                 <div class="totalSum">
-                    <hr>
+
                     <dt :class="{ 'font-weight-bold': !showNetPrices }">
                         {{ trans("Ceres::Template.basketTotalSum") }} ({{ trans("Ceres::Template.basketGross") }})
                     </dt><!--
