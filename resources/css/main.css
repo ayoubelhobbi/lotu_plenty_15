@@ -1404,7 +1404,8 @@ a.nav-link.active:hover, a.nav-link:hover {
 }
 
 nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li .level2 {
-  padding: 0;
+  padding-bottom: 0em !important;
+    padding-top: 0em !important;
 }
 }
 
