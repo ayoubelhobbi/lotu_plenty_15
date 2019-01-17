@@ -1,11 +1,11 @@
 <?php
-namespace ThemeName\Contexts;
+namespace LotuTheme\Contexts;
 
 use IO\Helper\ContextInterface;
 use Ceres\Contexts\SingleItemContext;
 use Plenty\Modules\Item\Item\Contracts\ItemRepositoryContract;
 
-class ThemeNameSingleItemContext extends SingleItemContext implements ContextInterface
+class LotuThemeSingleItemContext extends SingleItemContext implements ContextInterface
 {
   public $themeItem;
 
