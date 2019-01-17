@@ -1577,7 +1577,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 @media (min-width: 992px) {
 .no-touch nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse > li a:hover, .touch nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse > li a.hover{
   color: #ffce00 !important;
-  background: transparent;
+  background: #222;
 }
 }
 
