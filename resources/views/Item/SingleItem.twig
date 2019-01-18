@@ -17,19 +17,15 @@
                               <span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">Videos</span>
                             </div>
                             <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10" class="videoGallerySingle" >
-                                <a v-bind:href="property.texts.value" data-lity></a>
+                                <a v-bind:href="'https://www.youtube.com/watch?v='+property.texts.value" data-lity>
+                                  <img :src="'https://img.youtube.com/vi/'+property.texts.value+'/1.jpg'">
+
+                                </a>
 
                                 <div id="inline" style="background:#fff" class="lity-hide">
                                 Inline content
                                 </div>
                             </div>
-
-
-
-
-
-
-
 
                         </div>
 
