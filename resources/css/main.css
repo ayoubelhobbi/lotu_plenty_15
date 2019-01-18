@@ -911,10 +911,8 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 .videoGallerySingle a{
   float: left;
   margin-right: 0.8rem;
-  background-repeat: no-repeat;
-  background-position: center;
+
   margin-top: 0.5rem;
-  background-size: 11rem;
   border: 1px solid #ffffff;
 }
 
@@ -1622,10 +1620,15 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 
 @media (max-width: 544px){
 .videoGallerySingle a {
-  padding: 1.5rem 2.2rem;
   margin-right: 0.6rem;
-  background-size: 5rem;
+
 }
+
+videoGallerySingle img {
+  width: 4.2rem;
+}
+
+
 }
 
 /* Filter */
