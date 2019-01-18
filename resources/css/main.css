@@ -927,7 +927,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   text-align: center;
 }
 
-.videoGallerySingle:hover .overlay {
+.videoGallerySingle:hover .overlayVideoGallery {
   opacity: 1;
 }
 
