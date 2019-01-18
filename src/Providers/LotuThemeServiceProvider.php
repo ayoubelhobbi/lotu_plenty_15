@@ -15,7 +15,6 @@ use IO\Helper\ComponentContainer;
 use IO\Helper\TemplateContainer;
 use IO\Helper\ResourceContainer;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
-use Theme\Contexts\LotuThemeSingleItemContext;
 
 /**
  * Class LotuThemeServiceProvider
@@ -32,13 +31,6 @@ class LotuThemeServiceProvider extends ServiceProvider
 
     public function boot(Dispatcher $dispatcher)
     {
-
-      $dispatcher->listen('IO.ctx.item', function (TemplateContainer $templateContainer, $templateData = [])
-        {
-       $templateContainer->setContext( LotuThemeSingleItemContext::class);
-
-        }, self::PRIORITY);
-
           /* Skripte einbinden  */
       $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
        {
