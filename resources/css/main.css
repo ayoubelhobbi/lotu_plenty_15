@@ -904,17 +904,18 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   font-family: "akaChen", sans-serif;
 }
 
+.videoGallerySingle img {
+    width: 9rem;
+}
+
 .videoGallerySingle a{
   float: left;
-  padding: 3rem 4.5rem;
   margin-right: 0.8rem;
-  background-image: url(https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/video_gallery/videoplaceholder.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 0.5rem;
   background-size: 11rem;
   border: 1px solid #ffffff;
-
 }
 
 #SetInhalt {
