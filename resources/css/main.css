@@ -1646,14 +1646,10 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 @media (max-width: 544px){
 .videoGallerySingle a {
   margin-right: 0.6rem;
-
 }
-
-videoGallerySingle img {
+.videoGallerySingle img {
   width: 4.2rem;
 }
-
-
 }
 
 /* Filter */
