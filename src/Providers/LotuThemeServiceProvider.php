@@ -36,8 +36,8 @@ class LotuThemeServiceProvider extends ServiceProvider
       $dispatcher->listen('IO.ctx.item', function (TemplateContainer $templateContainer, $templateData = [])
         {
        $templateContainer->setContext( LotuThemeSingleItemContext::class);
-       return false;
-        }, 0);
+
+        }, self::PRIORITY);
 
           /* Skripte einbinden  */
       $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
