@@ -24,22 +24,23 @@
                                 </div>
                             </div>
 
-                            <div v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26" class="videoGallerySingle" >
-                                <a v-bind:href="https://www.youtube.com/watch?v='property.texts.value'" data-lity></a>
-
-                                <div id="inline" style="background:#fff" class="lity-hide">
-                                Inline content
-                                </div>
-
-                                <img src="https://img.youtube.com/vi/'property.texts.value'/0.jpg">
 
 
+
+
+
+
+
+                        </div>
+
+                        <div v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26" class="videoGallerySingle" >
+                            <a v-bind:href='https://www.youtube.com/watch?v="property.texts.value"' data-lity></a>
+
+                            <div id="inline" style="background:#fff" class="lity-hide">
+                            Inline content
                             </div>
 
-
-
-
-
+                            <img src='https://img.youtube.com/vi/"property.texts.value"/0.jpg'>
 
                         </div>
                     </div>
