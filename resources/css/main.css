@@ -153,6 +153,14 @@ body > #vue-app, body > #vue-error {
   font-size: 100%;
 }
 
+.widget-image-carousel.widget-primary .carousel-indicators li {
+    border-color: #ffce00;
+}
+
+.widget-image-carousel.widget-primary .carousel-indicators li.active {
+  background-color: #ffce00;
+}
+
 .cmp-product-thumb .price {
   font-size: 1.5rem;
 }
