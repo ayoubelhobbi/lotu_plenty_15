@@ -4,7 +4,6 @@
 {% set enabledRoutes = config("IO.routing.enabled_routes") | split(', ') %}
 {% set shippingCat = config("Ceres.global.shippingCostsCategoryId") %}
 {% set contactClass = services.customer.getContactClassId() %}
-{% set var = getFree(item.documents[0].data.item.id) %}
 
 <script type="x/template" id="vue-single-item">
     <div>
