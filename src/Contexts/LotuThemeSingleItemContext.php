@@ -13,6 +13,6 @@ class LotuThemeSingleItemContext extends SingleItemContext implements ContextInt
   {
     parent::init($params);
     $itemRep =  pluginApp(ItemRepositoryContract::class);
-    $this->themeItem= $itemRep->show($this->item['documents'][0]['data']['item']['id']);
+    $this->$themeItem= $itemRep->show($this->item['documents'][0]['data']['item']['id']);
   }
 }
