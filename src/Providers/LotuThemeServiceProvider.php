@@ -33,7 +33,7 @@ class LotuThemeServiceProvider extends ServiceProvider
     public function boot(Dispatcher $dispatcher)
     {
 
-      $dispatcher->listen('IO.ctx.item', function (TemplateContainer $templateContainer)
+      $dispatcher->listen('IO.ctx.item', function (TemplateContainer $templateContainer, $templateData = [])
       {
        $templateContainer->setContext( LotuThemeSingleItemContext::class);
       }, self::PRIORITY);
