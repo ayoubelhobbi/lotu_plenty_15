@@ -15,7 +15,7 @@ use IO\Helper\ComponentContainer;
 use IO\Helper\TemplateContainer;
 use IO\Helper\ResourceContainer;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
-use Theme\Contexts\LotuThemeSingleItemContext;
+use LotuTheme\Contexts\LotuThemeSingleItemContext;
 
 /**
  * Class LotuThemeServiceProvider
