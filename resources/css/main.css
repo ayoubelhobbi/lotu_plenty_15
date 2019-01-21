@@ -1652,6 +1652,15 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 .videoGallerySingle img {
   width: 4.2rem;
 }
+
+.single .nav-tabs .nav-item .nav-link {
+  font-size: 0.9rem;
+}
+
+.nav-tabs .nav-link {
+  padding: 0.7rem 1.235rem;
+}
+
 }
 
 /* Filter */
