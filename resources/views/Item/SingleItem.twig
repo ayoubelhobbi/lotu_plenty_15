@@ -16,9 +16,9 @@
                             <div class="ueberschriftGallerie">
                               <span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">Videos</span>
                             </div>
-                            <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10" class="videoGallerySingle" >
+                            <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10" class="videoGallerySingle owl-item" >
                                 <a v-bind:href="'https://www.youtube.com/watch?v='+property.texts.value" data-lity>
-                                  <img :src="'https://img.youtube.com/vi/'+property.texts.value+'/mqdefault.jpg'">
+                                  <img :src="'https://img.youtube.com/vi/'+property.texts.value+'/mqdefault.jpg'" class="owl-thumb">
                                   <div class="overlayVideoGallery">Video ansehen</div>
                                 </a>
 
