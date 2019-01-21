@@ -1634,11 +1634,13 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 
 }
 
+.single .nav-tabs .nav-item .nav-link.active, .single .nav-tabs .nav-item .nav-link:hover {
+  color: #222222 !important;
+}
 
 @media (min-width: 768px){
 .single .nav-tabs .nav-item .nav-link.active, .single .nav-tabs .nav-item .nav-link:hover {
   border: none;
-  color: #222222 !important;
   background: #fff;
 }
 }
