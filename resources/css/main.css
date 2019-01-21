@@ -1300,6 +1300,7 @@ button.btn.btn-block.btn-default {
 .single .nav-tabs .nav-item .nav-link {
     font-size: 1em;
     font-family: 'akaChen', sans-serif !important;
+    color: #fff;
 }
 
 
@@ -1474,7 +1475,6 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li .level2
     border: none;
     background-color: #515151;
     border-top-right-radius: 2rem;
-    color: #fff;
 }
 }
 
