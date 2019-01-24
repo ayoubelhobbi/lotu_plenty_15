@@ -84,7 +84,7 @@ class LotuThemeServiceProvider extends ServiceProvider
 
         /* Überschreiben der ItemImageCarousel */
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
-    if( $container->getOriginComponentTemplate() == 'Ceres::Ceres::Item.Components.ItemImageCarousel')
+    if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.ItemImageCarousel')
     {
        $container->setNewComponentTemplate('LotuTheme::Item.ItemImageCarousel');
     }
