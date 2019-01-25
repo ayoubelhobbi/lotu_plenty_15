@@ -1374,7 +1374,7 @@ a.nav-link.active:hover, a.nav-link:hover {
   }
 
   .wrapper-main .navbar {
-  	padding: 1px 1px 1px 1px !important;
+  	padding: 5px 1px 0px 1px !important;
   }
 
   .custom-select {
