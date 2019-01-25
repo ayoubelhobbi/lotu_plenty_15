@@ -624,6 +624,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
   margin-top: 2rem;
 }
 
+.page-content {
+  padding-top: 0rem;
+}
+
 .modal-body h1, .modal-body h2, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body h6, .modal-body p {
   color: #000000;
 }
@@ -1502,8 +1506,8 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li .level2
     margin-right: -15px;
      background-position: right top;
     background-image: url(https://image.flaticon.com/icons/svg/987/987941.svg);
-    background-repeat: no-repeat;*/
-    padding-top: 1rem;
+    background-repeat: no-repeat;
+    padding-top: 1rem;*/
     padding-left: 0rem;
   }
 }
