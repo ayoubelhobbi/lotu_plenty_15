@@ -619,6 +619,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
     font-family: 'akaChen', sans-serif;
 }
 
+#ppButton {
+  margin-bottom: 2rem;
+}
+
 .modal-body h1, .modal-body h2, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body h6, .modal-body p {
   color: #000000;
 }
