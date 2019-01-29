@@ -1499,7 +1499,6 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li .level2
 @media (min-width: 900px) {
   .pricing-plan {
     border-bottom: none;
-    border-right: 1px solid #e1f1ff;
     flex-basis: 100%;
     padding: 25px 50px;
   }
