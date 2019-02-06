@@ -70,6 +70,10 @@ table.material_table thead {
   color: #000000;
 }
 
+.material_table th {
+  font-family: 'akaChen', sans-serif;
+}
+
 /* Table Design */
 
 .tag {
