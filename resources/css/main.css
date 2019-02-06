@@ -49,124 +49,25 @@ body {
 
 /* Table Design */
 
-.material_table a:link {
-	color: #666;
-	font-weight: bold;
-	text-decoration:none;
-}
-.material_table a:active,
-.material_table a:hover {
-	color: #bd5a35;
-	text-decoration:underline;
-}
-.material_table {
-	border: 3px solid #fff;
-    border-radius: 3px;
-    margin: 20px auto;
-
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	width: 100%;
-}
-.material_table th {
-	background: #1784bf none repeat scroll 0 0;
-    border-bottom: 2px solid #fff;
-    border-left: 1px solid;
-    padding: 13px 18px 10px;
-
-}
-.material_table th:first-child {
-	text-align: left;
-	padding-left:20px;
-}
-.material_table tr:first-child th:first-child {
-
-}
-.material_table tr:first-child th:last-child {
-
-}
-.material_table tr {
-	text-align: center;
-	padding-left:20px;
-}
-.material_table td:first-child {
-	text-align: left;
-	padding-left:20px;
-	border-left: 0;
-}
-.material_table td {
-
-	border-left: 1px solid #fff;
-    border-top: 1px solid #ffffff;
-    padding: 10px;
-}
-.material_table_centering td {
-	text-align: center;
+table.material_table {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #FFCC00;
+  border-style: solid;
+  color: #000000;
 }
 
-.# tr.even td {
-	background: #f6f6f6;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
-	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
-}
-.material_table tr:last-child td {
-	border-bottom:0;
-}
-.material_table tr:last-child td:first-child {
-	-moz-border-radius-bottomleft:3px;
-	-webkit-border-bottom-left-radius:3px;
-	border-bottom-left-radius:3px;
-}
-.material_table tr:last-child td:last-child {
-	-moz-border-radius-bottomright:3px;
-	-webkit-border-bottom-right-radius:3px;
-	border-bottom-right-radius:3px;
-}
-.material_table tr:hover td {
-	background: #1784bf none repeat scroll 0 0;
+table.material_table td, table.material_table th {
+  border-width: 1px;
+  border-color: #FFCC00;
+  border-style: solid;
+  padding: 2px;
 }
 
-.material_table tr:hover .material_table_green {
-	background: #2F4A20 none repeat scroll 0 0 !important;
-}
-
-.material_table tr:hover .material_table_weiss {
-	background: #ebebeb none repeat scroll 0 0 !important;
-	color: darkgrey !important;
-}
-
-.material_table tr:hover .material_table_schwarz {
-	background: #000000 none repeat scroll 0 0 !important;
-}
-
-.material_table tr:hover .material_table_rot {
-	background: #FE292D none repeat scroll 0 0 !important;
-}
-
-.material_table tr:hover .material_table_blau {
-	background: #103A9C none repeat scroll 0 0 !important;
-}
-
-.material_table tr:hover .material_table_grau {
-	background: #a2a2a2 none repeat scroll 0 0 !important;
-}
-
-.material_table_header1 {
-
-	background: rgba(0, 0, 0, 0) url("/images/logo_lotus_weiss.png") repeat scroll -18px 0 !important;
-}
-
-.material_table_header2 {
-	background: rgba(0, 0, 0, 0) url("/images/nexus_logo.png") repeat scroll -10px 0 !important;
-}
-
-.material_table_header3 {
-	background: rgba(0, 0, 0, 0) url("/images/baron_logo.png") repeat scroll -12px 0 !important;
-}
-
-.material_table_header4 {
-	background: rgba(0, 0, 0, 0) url("/images/logo_piko.jpg") repeat scroll 0 0 !important;
+table.material_table thead {
+  background-color: #ffcc00;
 }
 
 /* Table Design */
