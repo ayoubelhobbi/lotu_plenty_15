@@ -51,12 +51,10 @@ body {
 
 table.material_table {
   width: 100%;
-  background-color: #FFFFFF;
   border-collapse: collapse;
-  border-width: 1px;
   border-color: #FFCC00;
   border-style: solid;
-  color: #000000;
+  color: #ffffff;
 }
 
 table.material_table td, table.material_table th {
@@ -64,10 +62,12 @@ table.material_table td, table.material_table th {
   border-color: #FFCC00;
   border-style: solid;
   padding: 2px;
+  text-align: center;
 }
 
 table.material_table thead {
   background-color: #ffcc00;
+  color: #000000;
 }
 
 /* Table Design */
