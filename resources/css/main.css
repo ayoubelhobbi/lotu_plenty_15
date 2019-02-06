@@ -52,14 +52,13 @@ body {
 table.material_table {
   width: 100%;
   border-collapse: collapse;
-  border-color: #FFCC00;
+  border-color: transparent;
   border-style: solid;
   color: #ffffff;
 }
 
 table.material_table td, table.material_table th {
   border-width: 1px;
-  border-color: #FFCC00;
   border-style: solid;
   padding: 2px;
   text-align: center;
