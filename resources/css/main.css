@@ -1121,6 +1121,15 @@ button.btn.btn-block.btn-default {
   border-bottom: none;
 }
 
+.iconsBeschreibung {
+  margin: 0 auto;
+  display: block;
+  max-width: 540px;
+  background: #222222;
+  padding: 2rem;
+  border: 1px solid #ffce00;
+}
+
 #mainNavbarCollapsable ul.mainmenu li {
   float: none;
 }
