@@ -1124,6 +1124,7 @@ button.btn.btn-block.btn-default {
   background: #222222;
   padding: 2rem;
   border: 1px solid #ffce00;
+  margin-left: 0.3rem;
 }
 
 #mainNavbarCollapsable ul.mainmenu li {
