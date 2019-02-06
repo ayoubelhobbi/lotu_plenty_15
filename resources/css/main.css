@@ -1118,8 +1118,6 @@ button.btn.btn-block.btn-default {
 }
 
 .iconsBeschreibung {
-  margin: 0 auto;
-  display: block;
   max-width: 540px;
   background: #222222;
   padding: 2rem;
