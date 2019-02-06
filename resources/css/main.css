@@ -1481,6 +1481,10 @@ a.nav-link.active:hover, a.nav-link:hover {
   .cmp-product-thumb .thumb-inner{
     padding: 1rem;
   }
+
+  table.material_table td, table.material_table th {
+    font-size: 0.7rem;
+  }
 }
 
 .single #single-carousel {
