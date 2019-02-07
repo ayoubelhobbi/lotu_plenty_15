@@ -1373,6 +1373,7 @@ button.btn.btn-block.btn-default {
     font-family: 'akaChen', sans-serif !important;
     color: #fff;
     background-color: #222222;
+    border: none;
 }
 
 
@@ -1723,6 +1724,10 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 .videoGallerySingle img {
   width: 4.2rem;
 }
+.single .nav-tabs .nav-item {
+    float: left;
+}
+
 }
 
 /* Filter */
