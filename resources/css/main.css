@@ -1372,6 +1372,7 @@ button.btn.btn-block.btn-default {
     font-size: 1em;
     font-family: 'akaChen', sans-serif !important;
     color: #fff;
+    background-color: #222222;
 }
 
 
@@ -1710,13 +1711,9 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 
 .single .nav-tabs .nav-item .nav-link.active, .single .nav-tabs .nav-item .nav-link:hover {
   color: #222222 !important;
-}
-
-@media (min-width: 768px){
-.single .nav-tabs .nav-item .nav-link.active, .single .nav-tabs .nav-item .nav-link:hover {
-  border: none;
   background: #ffce00;
-}
+  border: none;
+  border-top-right-radius: 2rem;
 }
 
 @media (max-width: 544px){
