@@ -356,7 +356,6 @@ body > #vue-app, body > #vue-error {
 }
 
 .iconsSingleItem h4 {
-  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -953,7 +952,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .ueberschriftGallerie {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 12px 0px 0px 0px;
 }
 
@@ -1087,7 +1086,6 @@ button.btn.btn-block.btn-default {
 }
 
 .gruppeIcons {
-  margin-bottom: 1rem;
   margin-top: 2rem;
 }
 
