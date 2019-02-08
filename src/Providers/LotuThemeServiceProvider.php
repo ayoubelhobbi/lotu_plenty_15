@@ -115,6 +115,12 @@ class LotuThemeServiceProvider extends ServiceProvider
 
      }, self::PRIORITY);
 
+     /* Überschreiben der Bestätigungsseite */
+     $dispatcher->listen('IO.tpl.confirmation', function (TemplateContainer $container)
+     {
+        $container->setTemplate('LotuTheme::Checkout.OrderConfirmation');
+
+     }, self::PRIORITY);
 
     }
 }
