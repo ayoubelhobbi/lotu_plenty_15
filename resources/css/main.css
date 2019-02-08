@@ -62,7 +62,7 @@ table.material_table td, table.material_table th {
   border-style: solid;
   padding: 2px;
   text-align: center;
-  border-color: #ffce00;
+  border-color: #6c757d;
 }
 
 table.material_table thead {
@@ -173,7 +173,7 @@ table.material_table thead {
 
 .footer small {
   display: block;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #6c757d;
   clear: left;
   padding-top: 16px;
 }
@@ -651,6 +651,7 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 .cmp-contact h1{
   color: #ffffff;
+  margin-top: 2rem;
 }
 
 .page-content.contact:not(.checkout):not(.basket) {
