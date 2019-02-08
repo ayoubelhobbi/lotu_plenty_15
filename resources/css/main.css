@@ -1386,6 +1386,7 @@ button.btn.btn-block.btn-default {
     color: #222222;
     background-color: #ffffff;
     border: none;
+    border-top-right-radius: 2rem;
 }
 
 
@@ -1556,14 +1557,6 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li .level2
 @media (min-width: 768px) {
 .wrapper-main>nav.container-max {
     top: 3px;
-}
-}
-
-@media (min-width: 768px) {
-.single .nav-tabs .nav-item .nav-link {
-    border: none;
-    background-color: #ffffff;
-    border-top-right-radius: 2rem;
 }
 }
 
