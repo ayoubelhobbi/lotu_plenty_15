@@ -66,8 +66,8 @@ table.material_table td, table.material_table th {
 }
 
 table.material_table thead {
-  background-color: #ffcc00;
-  color: #000000;
+  background-color: #ffffff;
+  color: #222222;
 }
 
 .table th, .table td {
@@ -1724,7 +1724,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 
 .single .nav-tabs .nav-item .nav-link.active, .single .nav-tabs .nav-item .nav-link:hover {
   color: #222222 !important;
-  background: #ffce00;
+  background: #ffffff;
   border: none;
   border-top-right-radius: 2rem;
 }
