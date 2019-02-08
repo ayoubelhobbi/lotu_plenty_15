@@ -277,6 +277,14 @@ body > #vue-app, body > #vue-error {
   margin-top: 2rem;
 }
 
+hr {
+  border-top: 1px solid #6c757d;
+}
+
+.cmp-order-item {
+  border-bottom: 1px solid #6c757d;
+}
+
 .owl-theme .owl-nav [class*='owl-'] {
   background: transparent;
 }
